@@ -9,6 +9,9 @@ import { createBooking } from "../ops/modules/booking.js";
 import { getOrder, updateOrderEta, upsertOrder } from "../ops/modules/order.js";
 import { updateTracking } from "../ops/modules/logistics.js";
 import { packOrderDocuments } from "../ops/filesystem.js";
+import { isDuplicateAndMark } from "./dedupe.js";
+import { sendToFiona } from "../bridge/fiona.js";
+import { downloadAndSaveLineMedia } from "./media.js";
 function missingTemplate(type) {
     if (type === "RECEIVED")
         return "請補：客戶 型號 金額(未稅)。例如：王先生 E3MH 120000";
@@ -29,9 +32,33 @@ function normalizeDate(raw) {
         return undefined;
     return `${m[1]}-${m[2].padStart(2, "0")}-${m[3].padStart(2, "0")}`;
 }
-async function handleCommand(text, replyToken, sourceRef) {
+async function handleCommand(input) {
+    const { text, replyToken, sourceRef, userId, groupId, timestamp } = input;
     const parts = text.trim().split(/\s+/);
     const cmd = parts[0]?.toLowerCase();
+    if (cmd === "/fiona") {
+        const forwarded = text.replace(/^\/fiona\s*/i, "").trim();
+        if (!forwarded) {
+            await replyText(replyToken, "用法：/fiona <你要 Fiona 處理的內容>");
+            return true;
+        }
+        const result = await sendToFiona({
+            target: process.env.FIONA_BRIDGE_TARGET || "fiona",
+            channel: "line",
+            userId,
+            groupId,
+            text: forwarded,
+            timestamp,
+            sourceRef
+        });
+        if (result.ok) {
+            await replyText(replyToken, result.replyText || "✅ 已轉給 Fiona");
+        }
+        else {
+            await replyText(replyToken, `⚠️ Fiona 轉發失敗：${result.reason}`);
+        }
+        return true;
+    }
     if (cmd === "/book") {
         const [customer, dateRaw, start, end] = [parts[1], parts[2], parts[3], parts[4]];
         const date = normalizeDate(dateRaw);
@@ -108,16 +135,77 @@ async function handleCommand(text, replyToken, sourceRef) {
     return false;
 }
 export async function handleLineEvent(event) {
-    if (event.type !== "message" || event.message.type !== "text")
+    if (event.type !== "message")
         return;
     try {
-        const text = event.message.text.trim();
+        const eventId = event.webhookEventId;
+        if (await isDuplicateAndMark(eventId)) {
+            markProcessedEvent();
+            return;
+        }
         const source = event.source;
         const userId = source?.userId ?? "unknown";
         const groupId = source?.type === "group" ? source.groupId : "direct";
         const replyToken = event.replyToken ?? "";
-        const sourceRef = `line:${userId}:${new Date().toISOString()}`;
-        if (await handleCommand(text, replyToken, sourceRef)) {
+        const sourceRef = `line:${userId}:${event.timestamp}`;
+        if (event.message.type !== "text") {
+            const supportedTypes = ["image", "video", "audio", "file"];
+            if (!supportedTypes.includes(event.message.type)) {
+                await replyText(replyToken, `已收到 ${event.message.type}，目前僅支援 image/video/audio/file 轉給 Fiona。`);
+                markProcessedEvent();
+                return;
+            }
+            const media = await downloadAndSaveLineMedia(event.message.id);
+            const fileName = event.message.type === "file" ? event.message.fileName : undefined;
+            const result = await sendToFiona({
+                target: process.env.FIONA_BRIDGE_TARGET || "fiona",
+                channel: "line",
+                userId,
+                groupId,
+                timestamp: event.timestamp,
+                sourceRef,
+                text: `[LINE ${event.message.type}] ${fileName || ""}`.trim(),
+                attachments: [
+                    {
+                        kind: event.message.type,
+                        filePath: media.filePath,
+                        contentType: media.contentType,
+                        size: media.size,
+                        fileName
+                    }
+                ]
+            });
+            if (result.ok) {
+                await replyText(replyToken, result.replyText || "✅ 附件已轉給 Fiona");
+            }
+            else {
+                await replyText(replyToken, `⚠️ 附件轉發 Fiona 失敗：${result.reason}`);
+            }
+            markProcessedEvent();
+            return;
+        }
+        const text = event.message.text.trim();
+        const fionaDirect = (process.env.FIONA_LINE_DIRECT_MODE || "false") === "true";
+        if (await handleCommand({ text, replyToken, sourceRef, userId, groupId, timestamp: event.timestamp })) {
+            markProcessedEvent();
+            return;
+        }
+        if (fionaDirect && !text.startsWith("/")) {
+            const result = await sendToFiona({
+                target: process.env.FIONA_BRIDGE_TARGET || "fiona",
+                channel: "line",
+                userId,
+                groupId,
+                text,
+                timestamp: event.timestamp,
+                sourceRef
+            });
+            if (result.ok) {
+                await replyText(replyToken, result.replyText || "✅ 已轉給 Fiona");
+            }
+            else {
+                await replyText(replyToken, `⚠️ Fiona 轉發失敗：${result.reason}`);
+            }
             markProcessedEvent();
             return;
         }
@@ -144,6 +232,14 @@ export async function handleLineEvent(event) {
     }
     catch (error) {
         markError();
-        throw error;
+        try {
+            if ("replyToken" in event && event.replyToken) {
+                await replyText(event.replyToken, "已收到訊息，但暫時處理失敗，請稍後再試一次。");
+            }
+        }
+        catch {
+            // ignore nested reply error
+        }
+        console.error("handleLineEvent failed", error);
     }
 }

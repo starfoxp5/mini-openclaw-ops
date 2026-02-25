@@ -84,6 +84,7 @@ npm run dev
   - `/eta <orderNo> <YYYY-MM-DD>`
   - `/track <carrier> <trackingNo>`
   - `/pack <orderNo>`
+  - `/fiona <內容>`（轉發給 Fiona）
 
 ## Ops Webhook (Phase 1)
 - URL: `POST /ops/webhook`
@@ -133,6 +134,15 @@ curl -X POST http://localhost:3000/ops/pack/PO-2026-001 \
 - `GET /health/deep`: webhook/scheduler/provider/notion 狀態與 runtime metrics
 - 每日健康摘要排程：`HEALTH_SUMMARY_CRON`（預設 20:00, Asia/Taipei）
 - 推播目標：`HEALTH_REPORT_TARGET_GROUP_ID`（未設則使用 `TARGET_GROUP_ID`）
+
+## Fiona Direct Bridge (LINE -> Fiona)
+- 可用 `/fiona ...` 指令轉發訊息給 Fiona。
+- 若 `FIONA_LINE_DIRECT_MODE=true`，一般文字（非 slash command）會直接轉發 Fiona。
+- 媒體/檔案（image/video/audio/file）會下載到 `data/line-media/` 後一併轉發。
+- 需設定：
+  - `FIONA_BRIDGE_ENABLED=true`
+  - `FIONA_BRIDGE_URL=<你的 Fiona ingress endpoint>`
+  - `FIONA_BRIDGE_TOKEN=<可選>`
 
 ## Schedules (Asia/Taipei)
 - `15:00`：待出貨提醒（Orders 篩選）

@@ -1,5 +1,5 @@
 {
-  "run_id": "gobooking-1771988188560-394810",
+  "run_id": "gobooking-1771992255387-720525",
   "profile": "chrome",
   "input": {
     "customer_name": "邱志奇",
@@ -23,8 +23,8 @@
       "action": "validate_input_contract",
       "result": "success",
       "duration_ms": 0,
-      "started_at": "2026-02-25T02:56:28.560Z",
-      "ended_at": "2026-02-25T02:56:28.560Z",
+      "started_at": "2026-02-25T04:04:15.387Z",
+      "ended_at": "2026-02-25T04:04:15.387Z",
       "attempt": 1
     },
     {
@@ -32,8 +32,8 @@
       "action": "open_gobooking_page",
       "result": "failed",
       "duration_ms": 0,
-      "started_at": "2026-02-25T02:56:28.560Z",
-      "ended_at": "2026-02-25T02:56:28.560Z",
+      "started_at": "2026-02-25T04:04:15.387Z",
+      "ended_at": "2026-02-25T04:04:15.387Z",
       "attempt": 1,
       "detail": "Relay is OFF"
     },
@@ -42,14 +42,14 @@
       "action": "open_gobooking_page",
       "result": "failed",
       "duration_ms": 0,
-      "started_at": "2026-02-25T02:56:28.560Z",
-      "ended_at": "2026-02-25T02:56:28.560Z",
+      "started_at": "2026-02-25T04:04:15.387Z",
+      "ended_at": "2026-02-25T04:04:15.387Z",
       "attempt": 2,
       "detail": "Relay is OFF"
     }
   ],
-  "started_at": "2026-02-25T02:56:28.560Z",
-  "ended_at": "2026-02-25T02:56:28.561Z",
+  "started_at": "2026-02-25T04:04:15.387Z",
+  "ended_at": "2026-02-25T04:04:15.388Z",
   "total_duration_ms": 1,
-  "last_failure_screenshot": "/Users/fionaaibot/Desktop/mini 監控系統資源/line-notion-bot/data/gobooking/screenshots/gobooking-1771988188560-394810.txt"
+  "last_failure_screenshot": "/Users/fionaaibot/Desktop/mini 監控系統資源/line-notion-bot/data/gobooking/screenshots/gobooking-1771992255387-720525.txt"
 }
