@@ -1,0 +1,7 @@
+{
+  "result": "failed",
+  "reason_type": "transport_failure",
+  "last_success_step": "parse",
+  "failed_step": "open_page",
+  "next_one_action": "請在目標分頁點 OpenClaw Browser Relay，確認徽章為 ON。"
+}

@@ -1,0 +1,1996 @@
+[2026-02-20T18:55:39] watchdog started
+[2026-02-20T18:55:39] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T18:55:39] [DRY-RUN] command: ollama ps
+[2026-02-20T18:55:39] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:55:39] health fail count=1
+[2026-02-20T18:55:44] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T18:55:44] [DRY-RUN] command: ollama ps
+[2026-02-20T18:55:44] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:55:44] health fail count=2
+[2026-02-20T18:55:49] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T18:55:49] [DRY-RUN] command: ollama ps
+[2026-02-20T18:55:49] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:55:49] health fail count=3
+[2026-02-20T18:55:49] recovery start: health_check_failed, model=qwen2.5:7b
+[2026-02-20T18:55:49] [DRY-RUN] command: bash -lc 'opclaw model use llama3.1:8b'
+[2026-02-20T18:55:49] switched model -> llama3.1:8b
+[2026-02-20T18:55:49] [DRY-RUN] command: bash -lc 'pkill -f opclaw || true; sleep 1; opclaw serve >/tmp/opclaw.log 2>&1 &'
+[2026-02-20T18:55:49] service restart completed
+[2026-02-20T18:55:49] [DRY-RUN] webhook POST to https://example.com/your-webhook: [Watchdog] Recovery completed
+reason=health_check_failed; from=qwen2.5:7b; to=llama3.1:8b
+[2026-02-20T18:55:49] [DRY-RUN] command: bash -lc 'echo '"'"'[Watchdog] Recovery completed
+reason=health_check_failed; from=qwen2.5:7b; to=llama3.1:8b'"'"''
+[2026-02-20T18:55:54] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T18:55:54] [DRY-RUN] command: ollama ps
+[2026-02-20T18:55:54] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:55:54] health fail count=1
+[2026-02-20T18:55:59] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T18:55:59] [DRY-RUN] command: ollama ps
+[2026-02-20T18:55:59] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:55:59] health fail count=2
+[2026-02-20T18:56:04] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T18:56:04] [DRY-RUN] command: ollama ps
+[2026-02-20T18:56:04] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:56:04] health fail count=3
+[2026-02-20T18:56:04] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T18:56:09] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T18:56:09] [DRY-RUN] command: ollama ps
+[2026-02-20T18:56:09] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:56:09] health fail count=1
+[2026-02-20T18:56:14] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T18:56:14] [DRY-RUN] command: ollama ps
+[2026-02-20T18:56:14] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:56:14] health fail count=2
+[2026-02-20T18:56:19] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T18:56:19] [DRY-RUN] command: ollama ps
+[2026-02-20T18:56:19] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:56:19] health fail count=3
+[2026-02-20T18:56:19] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T18:56:23] watchdog started
+[2026-02-20T18:56:23] memory usage=26.18%
+[2026-02-20T18:56:23] [DRY-RUN] command: ollama ps
+[2026-02-20T18:56:23] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:56:23] health fail count=1
+[2026-02-20T18:56:24] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T18:56:24] [DRY-RUN] command: ollama ps
+[2026-02-20T18:56:24] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:56:24] health fail count=1
+[2026-02-20T18:56:28] memory usage=26.16%
+[2026-02-20T18:56:28] [DRY-RUN] command: ollama ps
+[2026-02-20T18:56:28] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:56:28] health fail count=2
+[2026-02-20T18:56:29] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T18:56:29] [DRY-RUN] command: ollama ps
+[2026-02-20T18:56:29] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:56:29] health fail count=2
+[2026-02-20T18:56:33] memory usage=26.00%
+[2026-02-20T18:56:33] [DRY-RUN] command: ollama ps
+[2026-02-20T18:56:33] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:56:33] health fail count=3
+[2026-02-20T18:56:33] recovery start: health_check_failed, model=qwen2.5:7b
+[2026-02-20T18:56:33] [DRY-RUN] command: bash -lc 'opclaw model use llama3.1:8b'
+[2026-02-20T18:56:33] switched model -> llama3.1:8b
+[2026-02-20T18:56:33] [DRY-RUN] command: bash -lc 'pkill -f opclaw || true; sleep 1; opclaw serve >/tmp/opclaw.log 2>&1 &'
+[2026-02-20T18:56:33] service restart completed
+[2026-02-20T18:56:33] [DRY-RUN] webhook POST to https://example.com/your-webhook: [Watchdog] Recovery completed
+reason=health_check_failed; from=qwen2.5:7b; to=llama3.1:8b
+[2026-02-20T18:56:33] [DRY-RUN] command: bash -lc 'echo '"'"'[Watchdog] Recovery completed
+reason=health_check_failed; from=qwen2.5:7b; to=llama3.1:8b'"'"''
+[2026-02-20T18:56:34] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T18:56:34] [DRY-RUN] command: ollama ps
+[2026-02-20T18:56:34] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:56:34] health fail count=3
+[2026-02-20T18:56:34] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T18:56:38] memory usage=25.97%
+[2026-02-20T18:56:38] [DRY-RUN] command: ollama ps
+[2026-02-20T18:56:38] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:56:38] health fail count=1
+[2026-02-20T18:56:39] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T18:56:39] [DRY-RUN] command: ollama ps
+[2026-02-20T18:56:39] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:56:39] health fail count=1
+[2026-02-20T18:56:43] memory usage=25.93%
+[2026-02-20T18:56:43] [DRY-RUN] command: ollama ps
+[2026-02-20T18:56:43] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:56:43] health fail count=2
+[2026-02-20T18:56:44] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T18:56:44] [DRY-RUN] command: ollama ps
+[2026-02-20T18:56:44] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:56:44] health fail count=2
+[2026-02-20T18:56:48] memory usage=25.96%
+[2026-02-20T18:56:48] [DRY-RUN] command: ollama ps
+[2026-02-20T18:56:48] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:56:48] health fail count=3
+[2026-02-20T18:56:48] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T18:56:49] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T18:56:49] [DRY-RUN] command: ollama ps
+[2026-02-20T18:56:49] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:56:49] health fail count=3
+[2026-02-20T18:56:49] recovery start: health_check_failed, model=llama3.1:8b
+[2026-02-20T18:56:49] [DRY-RUN] command: bash -lc 'opclaw model use qwen2.5:7b'
+[2026-02-20T18:56:49] switched model -> qwen2.5:7b
+[2026-02-20T18:56:49] [DRY-RUN] command: bash -lc 'pkill -f opclaw || true; sleep 1; opclaw serve >/tmp/opclaw.log 2>&1 &'
+[2026-02-20T18:56:49] service restart completed
+[2026-02-20T18:56:49] [DRY-RUN] webhook POST to https://example.com/your-webhook: [Watchdog] Recovery completed
+reason=health_check_failed; from=llama3.1:8b; to=qwen2.5:7b
+[2026-02-20T18:56:49] [DRY-RUN] command: bash -lc 'echo '"'"'[Watchdog] Recovery completed
+reason=health_check_failed; from=llama3.1:8b; to=qwen2.5:7b'"'"''
+[2026-02-20T18:56:53] memory usage=26.06%
+[2026-02-20T18:56:53] [DRY-RUN] command: ollama ps
+[2026-02-20T18:56:53] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:56:53] health fail count=1
+[2026-02-20T18:56:54] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T18:56:54] [DRY-RUN] command: ollama ps
+[2026-02-20T18:56:54] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:56:54] health fail count=1
+[2026-02-20T18:56:58] memory usage=26.33%
+[2026-02-20T18:56:58] [DRY-RUN] command: ollama ps
+[2026-02-20T18:56:58] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:56:58] health fail count=2
+[2026-02-20T18:56:59] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T18:56:59] [DRY-RUN] command: ollama ps
+[2026-02-20T18:56:59] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:56:59] health fail count=2
+[2026-02-20T18:57:03] memory usage=26.03%
+[2026-02-20T18:57:03] [DRY-RUN] command: ollama ps
+[2026-02-20T18:57:03] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:57:03] health fail count=3
+[2026-02-20T18:57:03] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T18:57:04] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T18:57:04] [DRY-RUN] command: ollama ps
+[2026-02-20T18:57:04] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:57:04] health fail count=3
+[2026-02-20T18:57:04] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T18:57:08] memory usage=26.03%
+[2026-02-20T18:57:08] [DRY-RUN] command: ollama ps
+[2026-02-20T18:57:08] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:57:08] health fail count=1
+[2026-02-20T18:57:09] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T18:57:09] [DRY-RUN] command: ollama ps
+[2026-02-20T18:57:09] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:57:09] health fail count=1
+[2026-02-20T18:57:13] memory usage=25.82%
+[2026-02-20T18:57:13] [DRY-RUN] command: ollama ps
+[2026-02-20T18:57:13] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:57:13] health fail count=2
+[2026-02-20T18:57:14] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T18:57:14] [DRY-RUN] command: ollama ps
+[2026-02-20T18:57:14] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:57:14] health fail count=2
+[2026-02-20T18:57:18] memory usage=25.84%
+[2026-02-20T18:57:18] [DRY-RUN] command: ollama ps
+[2026-02-20T18:57:18] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:57:18] health fail count=3
+[2026-02-20T18:57:18] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T18:57:19] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T18:57:19] [DRY-RUN] command: ollama ps
+[2026-02-20T18:57:19] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:57:19] health fail count=3
+[2026-02-20T18:57:19] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T18:57:23] memory usage=25.84%
+[2026-02-20T18:57:23] [DRY-RUN] command: ollama ps
+[2026-02-20T18:57:23] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:57:23] health fail count=1
+[2026-02-20T18:57:24] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T18:57:24] [DRY-RUN] command: ollama ps
+[2026-02-20T18:57:24] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:57:24] health fail count=1
+[2026-02-20T18:57:28] memory usage=25.84%
+[2026-02-20T18:57:28] [DRY-RUN] command: ollama ps
+[2026-02-20T18:57:28] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:57:28] health fail count=2
+[2026-02-20T18:57:29] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T18:57:29] [DRY-RUN] command: ollama ps
+[2026-02-20T18:57:29] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:57:29] health fail count=2
+[2026-02-20T18:57:33] memory usage=25.81%
+[2026-02-20T18:57:33] [DRY-RUN] command: ollama ps
+[2026-02-20T18:57:33] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:57:33] health fail count=3
+[2026-02-20T18:57:33] recovery start: health_check_failed, model=llama3.1:8b
+[2026-02-20T18:57:33] [DRY-RUN] command: bash -lc 'opclaw model use qwen2.5:7b'
+[2026-02-20T18:57:33] switched model -> qwen2.5:7b
+[2026-02-20T18:57:33] [DRY-RUN] command: bash -lc 'pkill -f opclaw || true; sleep 1; opclaw serve >/tmp/opclaw.log 2>&1 &'
+[2026-02-20T18:57:33] service restart completed
+[2026-02-20T18:57:33] [DRY-RUN] webhook POST to https://example.com/your-webhook: [Watchdog] Recovery completed
+reason=health_check_failed; from=llama3.1:8b; to=qwen2.5:7b
+[2026-02-20T18:57:33] [DRY-RUN] command: bash -lc 'echo '"'"'[Watchdog] Recovery completed
+reason=health_check_failed; from=llama3.1:8b; to=qwen2.5:7b'"'"''
+[2026-02-20T18:57:34] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T18:57:34] [DRY-RUN] command: ollama ps
+[2026-02-20T18:57:34] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:57:34] health fail count=3
+[2026-02-20T18:57:34] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T18:57:38] memory usage=25.84%
+[2026-02-20T18:57:38] [DRY-RUN] command: ollama ps
+[2026-02-20T18:57:38] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:57:38] health fail count=1
+[2026-02-20T18:57:39] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T18:57:39] [DRY-RUN] command: ollama ps
+[2026-02-20T18:57:39] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:57:39] health fail count=1
+[2026-02-20T18:57:43] memory usage=25.48%
+[2026-02-20T18:57:43] [DRY-RUN] command: ollama ps
+[2026-02-20T18:57:43] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:57:43] health fail count=2
+[2026-02-20T18:57:44] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T18:57:44] [DRY-RUN] command: ollama ps
+[2026-02-20T18:57:44] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:57:44] health fail count=2
+[2026-02-20T18:57:48] memory usage=25.20%
+[2026-02-20T18:57:48] [DRY-RUN] command: ollama ps
+[2026-02-20T18:57:48] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:57:48] health fail count=3
+[2026-02-20T18:57:48] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T18:57:50] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T18:57:50] [DRY-RUN] command: ollama ps
+[2026-02-20T18:57:50] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:57:50] health fail count=3
+[2026-02-20T18:57:50] recovery start: health_check_failed, model=qwen2.5:7b
+[2026-02-20T18:57:50] [DRY-RUN] command: bash -lc 'opclaw model use llama3.1:8b'
+[2026-02-20T18:57:50] switched model -> llama3.1:8b
+[2026-02-20T18:57:50] [DRY-RUN] command: bash -lc 'pkill -f opclaw || true; sleep 1; opclaw serve >/tmp/opclaw.log 2>&1 &'
+[2026-02-20T18:57:50] service restart completed
+[2026-02-20T18:57:50] [DRY-RUN] webhook POST to https://example.com/your-webhook: [Watchdog] Recovery completed
+reason=health_check_failed; from=qwen2.5:7b; to=llama3.1:8b
+[2026-02-20T18:57:50] [DRY-RUN] command: bash -lc 'echo '"'"'[Watchdog] Recovery completed
+reason=health_check_failed; from=qwen2.5:7b; to=llama3.1:8b'"'"''
+[2026-02-20T18:57:53] memory usage=25.79%
+[2026-02-20T18:57:53] [DRY-RUN] command: ollama ps
+[2026-02-20T18:57:53] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:57:53] health fail count=1
+[2026-02-20T18:57:55] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T18:57:55] [DRY-RUN] command: ollama ps
+[2026-02-20T18:57:55] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:57:55] health fail count=1
+[2026-02-20T18:57:58] memory usage=25.81%
+[2026-02-20T18:57:58] [DRY-RUN] command: ollama ps
+[2026-02-20T18:57:58] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:57:58] health fail count=2
+[2026-02-20T18:58:00] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T18:58:00] [DRY-RUN] command: ollama ps
+[2026-02-20T18:58:00] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:58:00] health fail count=2
+[2026-02-20T18:58:03] memory usage=25.89%
+[2026-02-20T18:58:03] [DRY-RUN] command: ollama ps
+[2026-02-20T18:58:03] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:58:03] health fail count=3
+[2026-02-20T18:58:03] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T18:58:05] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T18:58:05] [DRY-RUN] command: ollama ps
+[2026-02-20T18:58:05] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:58:05] health fail count=3
+[2026-02-20T18:58:05] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T18:58:08] memory usage=25.93%
+[2026-02-20T18:58:08] [DRY-RUN] command: ollama ps
+[2026-02-20T18:58:08] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:58:08] health fail count=1
+[2026-02-20T18:58:10] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T18:58:10] [DRY-RUN] command: ollama ps
+[2026-02-20T18:58:10] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:58:10] health fail count=1
+[2026-02-20T18:58:13] memory usage=25.90%
+[2026-02-20T18:58:13] [DRY-RUN] command: ollama ps
+[2026-02-20T18:58:13] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:58:13] health fail count=2
+[2026-02-20T18:58:15] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T18:58:15] [DRY-RUN] command: ollama ps
+[2026-02-20T18:58:15] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:58:15] health fail count=2
+[2026-02-20T18:58:18] memory usage=25.90%
+[2026-02-20T18:58:18] [DRY-RUN] command: ollama ps
+[2026-02-20T18:58:18] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:58:18] health fail count=3
+[2026-02-20T18:58:18] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T18:58:20] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T18:58:20] [DRY-RUN] command: ollama ps
+[2026-02-20T18:58:20] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:58:20] health fail count=3
+[2026-02-20T18:58:20] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T18:58:23] memory usage=25.89%
+[2026-02-20T18:58:23] [DRY-RUN] command: ollama ps
+[2026-02-20T18:58:23] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:58:23] health fail count=1
+[2026-02-20T18:58:25] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T18:58:25] [DRY-RUN] command: ollama ps
+[2026-02-20T18:58:25] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:58:25] health fail count=1
+[2026-02-20T18:58:28] memory usage=25.90%
+[2026-02-20T18:58:28] [DRY-RUN] command: ollama ps
+[2026-02-20T18:58:28] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:58:28] health fail count=2
+[2026-02-20T18:58:30] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T18:58:30] [DRY-RUN] command: ollama ps
+[2026-02-20T18:58:30] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:58:30] health fail count=2
+[2026-02-20T18:58:33] memory usage=25.88%
+[2026-02-20T18:58:33] [DRY-RUN] command: ollama ps
+[2026-02-20T18:58:33] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:58:33] health fail count=3
+[2026-02-20T18:58:33] recovery start: health_check_failed, model=qwen2.5:7b
+[2026-02-20T18:58:33] [DRY-RUN] command: bash -lc 'opclaw model use llama3.1:8b'
+[2026-02-20T18:58:33] switched model -> llama3.1:8b
+[2026-02-20T18:58:33] [DRY-RUN] command: bash -lc 'pkill -f opclaw || true; sleep 1; opclaw serve >/tmp/opclaw.log 2>&1 &'
+[2026-02-20T18:58:33] service restart completed
+[2026-02-20T18:58:33] [DRY-RUN] webhook POST to https://example.com/your-webhook: [Watchdog] Recovery completed
+reason=health_check_failed; from=qwen2.5:7b; to=llama3.1:8b
+[2026-02-20T18:58:33] [DRY-RUN] command: bash -lc 'echo '"'"'[Watchdog] Recovery completed
+reason=health_check_failed; from=qwen2.5:7b; to=llama3.1:8b'"'"''
+[2026-02-20T18:58:35] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T18:58:35] [DRY-RUN] command: ollama ps
+[2026-02-20T18:58:35] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:58:35] health fail count=3
+[2026-02-20T18:58:35] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T18:58:38] memory usage=25.90%
+[2026-02-20T18:58:38] [DRY-RUN] command: ollama ps
+[2026-02-20T18:58:38] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:58:38] health fail count=1
+[2026-02-20T18:58:40] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T18:58:40] [DRY-RUN] command: ollama ps
+[2026-02-20T18:58:40] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:58:40] health fail count=1
+[2026-02-20T18:58:43] memory usage=25.88%
+[2026-02-20T18:58:43] [DRY-RUN] command: ollama ps
+[2026-02-20T18:58:43] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:58:43] health fail count=2
+[2026-02-20T18:58:45] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T18:58:45] [DRY-RUN] command: ollama ps
+[2026-02-20T18:58:45] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:58:45] health fail count=2
+[2026-02-20T18:58:48] memory usage=25.96%
+[2026-02-20T18:58:48] [DRY-RUN] command: ollama ps
+[2026-02-20T18:58:48] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:58:48] health fail count=3
+[2026-02-20T18:58:48] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T18:58:50] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T18:58:50] [DRY-RUN] command: ollama ps
+[2026-02-20T18:58:50] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:58:50] health fail count=3
+[2026-02-20T18:58:50] recovery start: health_check_failed, model=llama3.1:8b
+[2026-02-20T18:58:50] [DRY-RUN] command: bash -lc 'opclaw model use qwen2.5:7b'
+[2026-02-20T18:58:50] switched model -> qwen2.5:7b
+[2026-02-20T18:58:50] [DRY-RUN] command: bash -lc 'pkill -f opclaw || true; sleep 1; opclaw serve >/tmp/opclaw.log 2>&1 &'
+[2026-02-20T18:58:50] service restart completed
+[2026-02-20T18:58:50] [DRY-RUN] webhook POST to https://example.com/your-webhook: [Watchdog] Recovery completed
+reason=health_check_failed; from=llama3.1:8b; to=qwen2.5:7b
+[2026-02-20T18:58:50] [DRY-RUN] command: bash -lc 'echo '"'"'[Watchdog] Recovery completed
+reason=health_check_failed; from=llama3.1:8b; to=qwen2.5:7b'"'"''
+[2026-02-20T18:58:53] memory usage=25.93%
+[2026-02-20T18:58:53] [DRY-RUN] command: ollama ps
+[2026-02-20T18:58:53] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:58:53] health fail count=1
+[2026-02-20T18:58:55] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T18:58:55] [DRY-RUN] command: ollama ps
+[2026-02-20T18:58:55] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:58:55] health fail count=1
+[2026-02-20T18:58:58] memory usage=26.57%
+[2026-02-20T18:58:58] [DRY-RUN] command: ollama ps
+[2026-02-20T18:58:58] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:58:58] health fail count=2
+[2026-02-20T18:59:00] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T18:59:00] [DRY-RUN] command: ollama ps
+[2026-02-20T18:59:00] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:59:00] health fail count=2
+[2026-02-20T18:59:03] memory usage=26.17%
+[2026-02-20T18:59:03] [DRY-RUN] command: ollama ps
+[2026-02-20T18:59:03] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:59:03] health fail count=3
+[2026-02-20T18:59:03] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T18:59:05] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T18:59:05] [DRY-RUN] command: ollama ps
+[2026-02-20T18:59:05] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:59:05] health fail count=3
+[2026-02-20T18:59:05] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T18:59:08] memory usage=26.25%
+[2026-02-20T18:59:08] [DRY-RUN] command: ollama ps
+[2026-02-20T18:59:08] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:59:08] health fail count=1
+[2026-02-20T18:59:10] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T18:59:10] [DRY-RUN] command: ollama ps
+[2026-02-20T18:59:10] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:59:10] health fail count=1
+[2026-02-20T18:59:13] memory usage=26.26%
+[2026-02-20T18:59:13] [DRY-RUN] command: ollama ps
+[2026-02-20T18:59:13] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:59:13] health fail count=2
+[2026-02-20T18:59:15] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T18:59:15] [DRY-RUN] command: ollama ps
+[2026-02-20T18:59:15] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:59:15] health fail count=2
+[2026-02-20T18:59:18] memory usage=26.92%
+[2026-02-20T18:59:18] [DRY-RUN] command: ollama ps
+[2026-02-20T18:59:18] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:59:18] health fail count=3
+[2026-02-20T18:59:18] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T18:59:20] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T18:59:20] [DRY-RUN] command: ollama ps
+[2026-02-20T18:59:20] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:59:20] health fail count=3
+[2026-02-20T18:59:20] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T18:59:23] memory usage=26.56%
+[2026-02-20T18:59:23] [DRY-RUN] command: ollama ps
+[2026-02-20T18:59:23] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:59:23] health fail count=1
+[2026-02-20T18:59:25] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T18:59:25] [DRY-RUN] command: ollama ps
+[2026-02-20T18:59:25] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:59:25] health fail count=1
+[2026-02-20T18:59:28] memory usage=27.15%
+[2026-02-20T18:59:28] [DRY-RUN] command: ollama ps
+[2026-02-20T18:59:28] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:59:28] health fail count=2
+[2026-02-20T18:59:30] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T18:59:30] [DRY-RUN] command: ollama ps
+[2026-02-20T18:59:30] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:59:30] health fail count=2
+[2026-02-20T18:59:33] memory usage=27.01%
+[2026-02-20T18:59:33] [DRY-RUN] command: ollama ps
+[2026-02-20T18:59:34] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:59:34] health fail count=3
+[2026-02-20T18:59:34] recovery start: health_check_failed, model=llama3.1:8b
+[2026-02-20T18:59:34] [DRY-RUN] command: bash -lc 'opclaw model use qwen2.5:7b'
+[2026-02-20T18:59:34] switched model -> qwen2.5:7b
+[2026-02-20T18:59:34] [DRY-RUN] command: bash -lc 'pkill -f opclaw || true; sleep 1; opclaw serve >/tmp/opclaw.log 2>&1 &'
+[2026-02-20T18:59:34] service restart completed
+[2026-02-20T18:59:34] [DRY-RUN] webhook POST to https://example.com/your-webhook: [Watchdog] Recovery completed
+reason=health_check_failed; from=llama3.1:8b; to=qwen2.5:7b
+[2026-02-20T18:59:34] [DRY-RUN] command: bash -lc 'echo '"'"'[Watchdog] Recovery completed
+reason=health_check_failed; from=llama3.1:8b; to=qwen2.5:7b'"'"''
+[2026-02-20T18:59:35] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T18:59:35] [DRY-RUN] command: ollama ps
+[2026-02-20T18:59:35] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:59:35] health fail count=3
+[2026-02-20T18:59:35] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T18:59:39] memory usage=26.97%
+[2026-02-20T18:59:39] [DRY-RUN] command: ollama ps
+[2026-02-20T18:59:39] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:59:39] health fail count=1
+[2026-02-20T18:59:40] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T18:59:40] [DRY-RUN] command: ollama ps
+[2026-02-20T18:59:40] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:59:40] health fail count=1
+[2026-02-20T18:59:44] memory usage=26.94%
+[2026-02-20T18:59:44] [DRY-RUN] command: ollama ps
+[2026-02-20T18:59:44] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:59:44] health fail count=2
+[2026-02-20T18:59:45] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T18:59:45] [DRY-RUN] command: ollama ps
+[2026-02-20T18:59:45] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:59:45] health fail count=2
+[2026-02-20T18:59:49] memory usage=26.96%
+[2026-02-20T18:59:49] [DRY-RUN] command: ollama ps
+[2026-02-20T18:59:49] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:59:49] health fail count=3
+[2026-02-20T18:59:49] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T18:59:50] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T18:59:50] [DRY-RUN] command: ollama ps
+[2026-02-20T18:59:50] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:59:50] health fail count=3
+[2026-02-20T18:59:50] recovery start: health_check_failed, model=qwen2.5:7b
+[2026-02-20T18:59:50] [DRY-RUN] command: bash -lc 'opclaw model use llama3.1:8b'
+[2026-02-20T18:59:50] switched model -> llama3.1:8b
+[2026-02-20T18:59:50] [DRY-RUN] command: bash -lc 'pkill -f opclaw || true; sleep 1; opclaw serve >/tmp/opclaw.log 2>&1 &'
+[2026-02-20T18:59:50] service restart completed
+[2026-02-20T18:59:50] [DRY-RUN] webhook POST to https://example.com/your-webhook: [Watchdog] Recovery completed
+reason=health_check_failed; from=qwen2.5:7b; to=llama3.1:8b
+[2026-02-20T18:59:50] [DRY-RUN] command: bash -lc 'echo '"'"'[Watchdog] Recovery completed
+reason=health_check_failed; from=qwen2.5:7b; to=llama3.1:8b'"'"''
+[2026-02-20T18:59:54] memory usage=26.99%
+[2026-02-20T18:59:54] [DRY-RUN] command: ollama ps
+[2026-02-20T18:59:54] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:59:54] health fail count=1
+[2026-02-20T18:59:55] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T18:59:55] [DRY-RUN] command: ollama ps
+[2026-02-20T18:59:55] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:59:55] health fail count=1
+[2026-02-20T18:59:59] memory usage=26.96%
+[2026-02-20T18:59:59] [DRY-RUN] command: ollama ps
+[2026-02-20T18:59:59] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T18:59:59] health fail count=2
+[2026-02-20T19:00:00] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:00:00] [DRY-RUN] command: ollama ps
+[2026-02-20T19:00:00] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:00:00] health fail count=2
+[2026-02-20T19:00:04] memory usage=27.27%
+[2026-02-20T19:00:04] [DRY-RUN] command: ollama ps
+[2026-02-20T19:00:04] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:00:04] health fail count=3
+[2026-02-20T19:00:04] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:00:05] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:00:05] [DRY-RUN] command: ollama ps
+[2026-02-20T19:00:05] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:00:05] health fail count=3
+[2026-02-20T19:00:05] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:00:09] memory usage=27.01%
+[2026-02-20T19:00:09] [DRY-RUN] command: ollama ps
+[2026-02-20T19:00:09] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:00:09] health fail count=1
+[2026-02-20T19:00:10] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:00:10] [DRY-RUN] command: ollama ps
+[2026-02-20T19:00:10] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:00:10] health fail count=1
+[2026-02-20T19:00:14] memory usage=26.99%
+[2026-02-20T19:00:14] [DRY-RUN] command: ollama ps
+[2026-02-20T19:00:14] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:00:14] health fail count=2
+[2026-02-20T19:00:15] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:00:15] [DRY-RUN] command: ollama ps
+[2026-02-20T19:00:15] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:00:15] health fail count=2
+[2026-02-20T19:00:19] memory usage=26.89%
+[2026-02-20T19:00:19] [DRY-RUN] command: ollama ps
+[2026-02-20T19:00:19] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:00:19] health fail count=3
+[2026-02-20T19:00:19] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:00:20] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:00:20] [DRY-RUN] command: ollama ps
+[2026-02-20T19:00:20] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:00:20] health fail count=3
+[2026-02-20T19:00:20] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:00:24] memory usage=26.92%
+[2026-02-20T19:00:24] [DRY-RUN] command: ollama ps
+[2026-02-20T19:00:24] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:00:24] health fail count=1
+[2026-02-20T19:00:25] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:00:25] [DRY-RUN] command: ollama ps
+[2026-02-20T19:00:25] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:00:25] health fail count=1
+[2026-02-20T19:00:29] memory usage=26.78%
+[2026-02-20T19:00:29] [DRY-RUN] command: ollama ps
+[2026-02-20T19:00:29] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:00:29] health fail count=2
+[2026-02-20T19:00:30] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:00:30] [DRY-RUN] command: ollama ps
+[2026-02-20T19:00:30] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:00:30] health fail count=2
+[2026-02-20T19:00:34] memory usage=26.86%
+[2026-02-20T19:00:34] [DRY-RUN] command: ollama ps
+[2026-02-20T19:00:34] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:00:34] health fail count=3
+[2026-02-20T19:00:34] recovery start: health_check_failed, model=qwen2.5:7b
+[2026-02-20T19:00:34] [DRY-RUN] command: bash -lc 'opclaw model use llama3.1:8b'
+[2026-02-20T19:00:34] switched model -> llama3.1:8b
+[2026-02-20T19:00:34] [DRY-RUN] command: bash -lc 'pkill -f opclaw || true; sleep 1; opclaw serve >/tmp/opclaw.log 2>&1 &'
+[2026-02-20T19:00:34] service restart completed
+[2026-02-20T19:00:34] [DRY-RUN] webhook POST to https://example.com/your-webhook: [Watchdog] Recovery completed
+reason=health_check_failed; from=qwen2.5:7b; to=llama3.1:8b
+[2026-02-20T19:00:34] [DRY-RUN] command: bash -lc 'echo '"'"'[Watchdog] Recovery completed
+reason=health_check_failed; from=qwen2.5:7b; to=llama3.1:8b'"'"''
+[2026-02-20T19:00:35] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:00:35] [DRY-RUN] command: ollama ps
+[2026-02-20T19:00:35] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:00:35] health fail count=3
+[2026-02-20T19:00:35] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:00:39] memory usage=26.81%
+[2026-02-20T19:00:39] [DRY-RUN] command: ollama ps
+[2026-02-20T19:00:39] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:00:39] health fail count=1
+[2026-02-20T19:00:40] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:00:40] [DRY-RUN] command: ollama ps
+[2026-02-20T19:00:40] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:00:40] health fail count=1
+[2026-02-20T19:00:44] memory usage=26.78%
+[2026-02-20T19:00:44] [DRY-RUN] command: ollama ps
+[2026-02-20T19:00:44] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:00:44] health fail count=2
+[2026-02-20T19:00:45] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:00:45] [DRY-RUN] command: ollama ps
+[2026-02-20T19:00:45] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:00:45] health fail count=2
+[2026-02-20T19:00:49] memory usage=26.77%
+[2026-02-20T19:00:49] [DRY-RUN] command: ollama ps
+[2026-02-20T19:00:49] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:00:49] health fail count=3
+[2026-02-20T19:00:49] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:00:50] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:00:50] [DRY-RUN] command: ollama ps
+[2026-02-20T19:00:50] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:00:50] health fail count=3
+[2026-02-20T19:00:50] recovery start: health_check_failed, model=llama3.1:8b
+[2026-02-20T19:00:50] [DRY-RUN] command: bash -lc 'opclaw model use qwen2.5:7b'
+[2026-02-20T19:00:50] switched model -> qwen2.5:7b
+[2026-02-20T19:00:50] [DRY-RUN] command: bash -lc 'pkill -f opclaw || true; sleep 1; opclaw serve >/tmp/opclaw.log 2>&1 &'
+[2026-02-20T19:00:50] service restart completed
+[2026-02-20T19:00:50] [DRY-RUN] webhook POST to https://example.com/your-webhook: [Watchdog] Recovery completed
+reason=health_check_failed; from=llama3.1:8b; to=qwen2.5:7b
+[2026-02-20T19:00:50] [DRY-RUN] command: bash -lc 'echo '"'"'[Watchdog] Recovery completed
+reason=health_check_failed; from=llama3.1:8b; to=qwen2.5:7b'"'"''
+[2026-02-20T19:00:54] memory usage=26.63%
+[2026-02-20T19:00:54] [DRY-RUN] command: ollama ps
+[2026-02-20T19:00:54] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:00:54] health fail count=1
+[2026-02-20T19:00:55] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:00:55] [DRY-RUN] command: ollama ps
+[2026-02-20T19:00:55] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:00:55] health fail count=1
+[2026-02-20T19:00:59] memory usage=26.60%
+[2026-02-20T19:00:59] [DRY-RUN] command: ollama ps
+[2026-02-20T19:00:59] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:00:59] health fail count=2
+[2026-02-20T19:01:00] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:01:00] [DRY-RUN] command: ollama ps
+[2026-02-20T19:01:00] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:01:00] health fail count=2
+[2026-02-20T19:01:04] memory usage=26.61%
+[2026-02-20T19:01:04] [DRY-RUN] command: ollama ps
+[2026-02-20T19:01:04] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:01:04] health fail count=3
+[2026-02-20T19:01:04] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:01:05] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:01:06] [DRY-RUN] command: ollama ps
+[2026-02-20T19:01:06] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:01:06] health fail count=3
+[2026-02-20T19:01:06] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:01:09] memory usage=26.67%
+[2026-02-20T19:01:09] [DRY-RUN] command: ollama ps
+[2026-02-20T19:01:09] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:01:09] health fail count=1
+[2026-02-20T19:01:11] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:01:11] [DRY-RUN] command: ollama ps
+[2026-02-20T19:01:11] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:01:11] health fail count=1
+[2026-02-20T19:01:14] memory usage=26.61%
+[2026-02-20T19:01:14] [DRY-RUN] command: ollama ps
+[2026-02-20T19:01:14] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:01:14] health fail count=2
+[2026-02-20T19:01:16] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:01:16] [DRY-RUN] command: ollama ps
+[2026-02-20T19:01:16] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:01:16] health fail count=2
+[2026-02-20T19:01:19] memory usage=26.63%
+[2026-02-20T19:01:19] [DRY-RUN] command: ollama ps
+[2026-02-20T19:01:19] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:01:19] health fail count=3
+[2026-02-20T19:01:19] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:01:21] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:01:21] [DRY-RUN] command: ollama ps
+[2026-02-20T19:01:21] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:01:21] health fail count=3
+[2026-02-20T19:01:21] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:01:24] memory usage=26.63%
+[2026-02-20T19:01:24] [DRY-RUN] command: ollama ps
+[2026-02-20T19:01:24] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:01:24] health fail count=1
+[2026-02-20T19:01:26] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:01:26] [DRY-RUN] command: ollama ps
+[2026-02-20T19:01:26] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:01:26] health fail count=1
+[2026-02-20T19:01:29] memory usage=26.81%
+[2026-02-20T19:01:29] [DRY-RUN] command: ollama ps
+[2026-02-20T19:01:29] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:01:29] health fail count=2
+[2026-02-20T19:01:31] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:01:31] [DRY-RUN] command: ollama ps
+[2026-02-20T19:01:31] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:01:31] health fail count=2
+[2026-02-20T19:01:34] memory usage=26.73%
+[2026-02-20T19:01:34] [DRY-RUN] command: ollama ps
+[2026-02-20T19:01:34] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:01:34] health fail count=3
+[2026-02-20T19:01:34] recovery start: health_check_failed, model=llama3.1:8b
+[2026-02-20T19:01:34] [DRY-RUN] command: bash -lc 'opclaw model use qwen2.5:7b'
+[2026-02-20T19:01:34] switched model -> qwen2.5:7b
+[2026-02-20T19:01:34] [DRY-RUN] command: bash -lc 'pkill -f opclaw || true; sleep 1; opclaw serve >/tmp/opclaw.log 2>&1 &'
+[2026-02-20T19:01:34] service restart completed
+[2026-02-20T19:01:34] [DRY-RUN] webhook POST to https://example.com/your-webhook: [Watchdog] Recovery completed
+reason=health_check_failed; from=llama3.1:8b; to=qwen2.5:7b
+[2026-02-20T19:01:34] [DRY-RUN] command: bash -lc 'echo '"'"'[Watchdog] Recovery completed
+reason=health_check_failed; from=llama3.1:8b; to=qwen2.5:7b'"'"''
+[2026-02-20T19:01:36] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:01:36] [DRY-RUN] command: ollama ps
+[2026-02-20T19:01:36] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:01:36] health fail count=3
+[2026-02-20T19:01:36] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:01:39] memory usage=26.70%
+[2026-02-20T19:01:39] [DRY-RUN] command: ollama ps
+[2026-02-20T19:01:39] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:01:39] health fail count=1
+[2026-02-20T19:01:41] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:01:41] [DRY-RUN] command: ollama ps
+[2026-02-20T19:01:41] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:01:41] health fail count=1
+[2026-02-20T19:01:44] memory usage=26.70%
+[2026-02-20T19:01:44] [DRY-RUN] command: ollama ps
+[2026-02-20T19:01:44] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:01:44] health fail count=2
+[2026-02-20T19:01:46] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:01:46] [DRY-RUN] command: ollama ps
+[2026-02-20T19:01:46] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:01:46] health fail count=2
+[2026-02-20T19:01:49] memory usage=26.72%
+[2026-02-20T19:01:49] [DRY-RUN] command: ollama ps
+[2026-02-20T19:01:49] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:01:49] health fail count=3
+[2026-02-20T19:01:49] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:01:51] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:01:51] [DRY-RUN] command: ollama ps
+[2026-02-20T19:01:51] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:01:51] health fail count=3
+[2026-02-20T19:01:51] recovery start: health_check_failed, model=qwen2.5:7b
+[2026-02-20T19:01:51] [DRY-RUN] command: bash -lc 'opclaw model use llama3.1:8b'
+[2026-02-20T19:01:51] switched model -> llama3.1:8b
+[2026-02-20T19:01:51] [DRY-RUN] command: bash -lc 'pkill -f opclaw || true; sleep 1; opclaw serve >/tmp/opclaw.log 2>&1 &'
+[2026-02-20T19:01:51] service restart completed
+[2026-02-20T19:01:51] [DRY-RUN] webhook POST to https://example.com/your-webhook: [Watchdog] Recovery completed
+reason=health_check_failed; from=qwen2.5:7b; to=llama3.1:8b
+[2026-02-20T19:01:51] [DRY-RUN] command: bash -lc 'echo '"'"'[Watchdog] Recovery completed
+reason=health_check_failed; from=qwen2.5:7b; to=llama3.1:8b'"'"''
+[2026-02-20T19:01:54] memory usage=26.76%
+[2026-02-20T19:01:54] [DRY-RUN] command: ollama ps
+[2026-02-20T19:01:54] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:01:54] health fail count=1
+[2026-02-20T19:01:56] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:01:56] [DRY-RUN] command: ollama ps
+[2026-02-20T19:01:56] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:01:56] health fail count=1
+[2026-02-20T19:01:59] memory usage=26.73%
+[2026-02-20T19:01:59] [DRY-RUN] command: ollama ps
+[2026-02-20T19:01:59] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:01:59] health fail count=2
+[2026-02-20T19:02:01] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:02:01] [DRY-RUN] command: ollama ps
+[2026-02-20T19:02:01] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:02:01] health fail count=2
+[2026-02-20T19:02:04] memory usage=26.73%
+[2026-02-20T19:02:04] [DRY-RUN] command: ollama ps
+[2026-02-20T19:02:04] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:02:04] health fail count=3
+[2026-02-20T19:02:04] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:02:06] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:02:06] [DRY-RUN] command: ollama ps
+[2026-02-20T19:02:06] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:02:06] health fail count=3
+[2026-02-20T19:02:06] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:02:09] memory usage=26.74%
+[2026-02-20T19:02:09] [DRY-RUN] command: ollama ps
+[2026-02-20T19:02:09] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:02:09] health fail count=1
+[2026-02-20T19:02:11] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:02:11] [DRY-RUN] command: ollama ps
+[2026-02-20T19:02:11] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:02:11] health fail count=1
+[2026-02-20T19:02:14] memory usage=26.70%
+[2026-02-20T19:02:14] [DRY-RUN] command: ollama ps
+[2026-02-20T19:02:14] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:02:14] health fail count=2
+[2026-02-20T19:02:16] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:02:16] [DRY-RUN] command: ollama ps
+[2026-02-20T19:02:16] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:02:16] health fail count=2
+[2026-02-20T19:02:19] memory usage=26.70%
+[2026-02-20T19:02:19] [DRY-RUN] command: ollama ps
+[2026-02-20T19:02:19] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:02:19] health fail count=3
+[2026-02-20T19:02:19] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:02:21] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:02:21] [DRY-RUN] command: ollama ps
+[2026-02-20T19:02:21] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:02:21] health fail count=3
+[2026-02-20T19:02:21] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:02:24] memory usage=26.65%
+[2026-02-20T19:02:24] [DRY-RUN] command: ollama ps
+[2026-02-20T19:02:24] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:02:24] health fail count=1
+[2026-02-20T19:02:26] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:02:26] [DRY-RUN] command: ollama ps
+[2026-02-20T19:02:26] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:02:26] health fail count=1
+[2026-02-20T19:02:29] memory usage=26.71%
+[2026-02-20T19:02:29] [DRY-RUN] command: ollama ps
+[2026-02-20T19:02:29] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:02:29] health fail count=2
+[2026-02-20T19:02:31] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:02:31] [DRY-RUN] command: ollama ps
+[2026-02-20T19:02:31] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:02:31] health fail count=2
+[2026-02-20T19:02:34] memory usage=26.66%
+[2026-02-20T19:02:34] [DRY-RUN] command: ollama ps
+[2026-02-20T19:02:34] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:02:34] health fail count=3
+[2026-02-20T19:02:34] recovery start: health_check_failed, model=qwen2.5:7b
+[2026-02-20T19:02:34] [DRY-RUN] command: bash -lc 'opclaw model use llama3.1:8b'
+[2026-02-20T19:02:34] switched model -> llama3.1:8b
+[2026-02-20T19:02:34] [DRY-RUN] command: bash -lc 'pkill -f opclaw || true; sleep 1; opclaw serve >/tmp/opclaw.log 2>&1 &'
+[2026-02-20T19:02:34] service restart completed
+[2026-02-20T19:02:34] [DRY-RUN] webhook POST to https://example.com/your-webhook: [Watchdog] Recovery completed
+reason=health_check_failed; from=qwen2.5:7b; to=llama3.1:8b
+[2026-02-20T19:02:34] [DRY-RUN] command: bash -lc 'echo '"'"'[Watchdog] Recovery completed
+reason=health_check_failed; from=qwen2.5:7b; to=llama3.1:8b'"'"''
+[2026-02-20T19:02:36] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:02:36] [DRY-RUN] command: ollama ps
+[2026-02-20T19:02:36] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:02:36] health fail count=3
+[2026-02-20T19:02:36] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:02:39] memory usage=26.72%
+[2026-02-20T19:02:39] [DRY-RUN] command: ollama ps
+[2026-02-20T19:02:39] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:02:39] health fail count=1
+[2026-02-20T19:02:41] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:02:41] [DRY-RUN] command: ollama ps
+[2026-02-20T19:02:41] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:02:41] health fail count=1
+[2026-02-20T19:02:44] memory usage=26.67%
+[2026-02-20T19:02:44] [DRY-RUN] command: ollama ps
+[2026-02-20T19:02:44] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:02:44] health fail count=2
+[2026-02-20T19:02:46] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:02:46] [DRY-RUN] command: ollama ps
+[2026-02-20T19:02:46] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:02:46] health fail count=2
+[2026-02-20T19:02:49] memory usage=26.70%
+[2026-02-20T19:02:49] [DRY-RUN] command: ollama ps
+[2026-02-20T19:02:49] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:02:49] health fail count=3
+[2026-02-20T19:02:49] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:02:51] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:02:51] [DRY-RUN] command: ollama ps
+[2026-02-20T19:02:51] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:02:51] health fail count=3
+[2026-02-20T19:02:51] recovery start: health_check_failed, model=llama3.1:8b
+[2026-02-20T19:02:51] [DRY-RUN] command: bash -lc 'opclaw model use qwen2.5:7b'
+[2026-02-20T19:02:51] switched model -> qwen2.5:7b
+[2026-02-20T19:02:51] [DRY-RUN] command: bash -lc 'pkill -f opclaw || true; sleep 1; opclaw serve >/tmp/opclaw.log 2>&1 &'
+[2026-02-20T19:02:51] service restart completed
+[2026-02-20T19:02:51] [DRY-RUN] webhook POST to https://example.com/your-webhook: [Watchdog] Recovery completed
+reason=health_check_failed; from=llama3.1:8b; to=qwen2.5:7b
+[2026-02-20T19:02:51] [DRY-RUN] command: bash -lc 'echo '"'"'[Watchdog] Recovery completed
+reason=health_check_failed; from=llama3.1:8b; to=qwen2.5:7b'"'"''
+[2026-02-20T19:02:54] memory usage=26.66%
+[2026-02-20T19:02:54] [DRY-RUN] command: ollama ps
+[2026-02-20T19:02:54] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:02:54] health fail count=1
+[2026-02-20T19:02:56] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:02:56] [DRY-RUN] command: ollama ps
+[2026-02-20T19:02:56] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:02:56] health fail count=1
+[2026-02-20T19:02:59] memory usage=26.73%
+[2026-02-20T19:02:59] [DRY-RUN] command: ollama ps
+[2026-02-20T19:02:59] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:02:59] health fail count=2
+[2026-02-20T19:03:01] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:03:01] [DRY-RUN] command: ollama ps
+[2026-02-20T19:03:01] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:03:01] health fail count=2
+[2026-02-20T19:03:04] memory usage=26.72%
+[2026-02-20T19:03:04] [DRY-RUN] command: ollama ps
+[2026-02-20T19:03:04] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:03:04] health fail count=3
+[2026-02-20T19:03:04] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:03:06] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:03:06] [DRY-RUN] command: ollama ps
+[2026-02-20T19:03:06] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:03:06] health fail count=3
+[2026-02-20T19:03:06] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:03:09] memory usage=26.71%
+[2026-02-20T19:03:09] [DRY-RUN] command: ollama ps
+[2026-02-20T19:03:09] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:03:09] health fail count=1
+[2026-02-20T19:03:11] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:03:11] [DRY-RUN] command: ollama ps
+[2026-02-20T19:03:11] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:03:11] health fail count=1
+[2026-02-20T19:03:14] memory usage=26.71%
+[2026-02-20T19:03:14] [DRY-RUN] command: ollama ps
+[2026-02-20T19:03:14] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:03:14] health fail count=2
+[2026-02-20T19:03:16] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:03:16] [DRY-RUN] command: ollama ps
+[2026-02-20T19:03:16] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:03:16] health fail count=2
+[2026-02-20T19:03:19] memory usage=26.75%
+[2026-02-20T19:03:19] [DRY-RUN] command: ollama ps
+[2026-02-20T19:03:19] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:03:19] health fail count=3
+[2026-02-20T19:03:19] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:03:21] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:03:21] [DRY-RUN] command: ollama ps
+[2026-02-20T19:03:21] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:03:21] health fail count=3
+[2026-02-20T19:03:21] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:03:23] profile mode enabled, start profile=full
+[2026-02-20T19:03:24] memory usage=26.74%
+[2026-02-20T19:03:24] [DRY-RUN] command: ollama ps
+[2026-02-20T19:03:24] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:03:24] health fail count=1
+[2026-02-20T19:03:26] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:03:26] [DRY-RUN] command: ollama ps
+[2026-02-20T19:03:26] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:03:26] health fail count=1
+[2026-02-20T19:03:29] memory usage=26.80%
+[2026-02-20T19:03:29] [DRY-RUN] command: ollama ps
+[2026-02-20T19:03:29] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:03:29] health fail count=2
+[2026-02-20T19:03:31] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:03:31] [DRY-RUN] command: ollama ps
+[2026-02-20T19:03:31] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:03:31] health fail count=2
+[2026-02-20T19:03:34] memory usage=26.82%
+[2026-02-20T19:03:34] [DRY-RUN] command: ollama ps
+[2026-02-20T19:03:34] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:03:34] health fail count=3
+[2026-02-20T19:03:34] recovery start: health_check_failed, model=llama3.1:8b
+[2026-02-20T19:03:34] [DRY-RUN] command: bash -lc 'opclaw model use qwen2.5:7b'
+[2026-02-20T19:03:34] switched model -> qwen2.5:7b
+[2026-02-20T19:03:34] [DRY-RUN] command: bash -lc 'pkill -f opclaw || true; sleep 1; opclaw serve >/tmp/opclaw.log 2>&1 &'
+[2026-02-20T19:03:34] service restart completed
+[2026-02-20T19:03:34] [DRY-RUN] webhook POST to https://example.com/your-webhook: [Watchdog] Recovery completed
+reason=health_check_failed; from=llama3.1:8b; to=qwen2.5:7b
+[2026-02-20T19:03:34] [DRY-RUN] command: bash -lc 'echo '"'"'[Watchdog] Recovery completed
+reason=health_check_failed; from=llama3.1:8b; to=qwen2.5:7b'"'"''
+[2026-02-20T19:03:36] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:03:36] [DRY-RUN] command: ollama ps
+[2026-02-20T19:03:36] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:03:36] health fail count=3
+[2026-02-20T19:03:36] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:03:39] memory usage=26.97%
+[2026-02-20T19:03:39] [DRY-RUN] command: ollama ps
+[2026-02-20T19:03:39] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:03:39] health fail count=1
+[2026-02-20T19:03:41] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:03:41] [DRY-RUN] command: ollama ps
+[2026-02-20T19:03:41] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:03:41] health fail count=1
+[2026-02-20T19:03:44] memory usage=26.67%
+[2026-02-20T19:03:44] [DRY-RUN] command: ollama ps
+[2026-02-20T19:03:44] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:03:44] health fail count=2
+[2026-02-20T19:03:46] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:03:46] [DRY-RUN] command: ollama ps
+[2026-02-20T19:03:46] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:03:46] health fail count=2
+[2026-02-20T19:03:49] memory usage=26.53%
+[2026-02-20T19:03:49] [DRY-RUN] command: ollama ps
+[2026-02-20T19:03:49] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:03:49] health fail count=3
+[2026-02-20T19:03:49] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:03:51] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:03:51] [DRY-RUN] command: ollama ps
+[2026-02-20T19:03:51] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:03:51] health fail count=3
+[2026-02-20T19:03:51] recovery start: health_check_failed, model=qwen2.5:7b
+[2026-02-20T19:03:51] [DRY-RUN] command: bash -lc 'opclaw model use llama3.1:8b'
+[2026-02-20T19:03:51] switched model -> llama3.1:8b
+[2026-02-20T19:03:51] [DRY-RUN] command: bash -lc 'pkill -f opclaw || true; sleep 1; opclaw serve >/tmp/opclaw.log 2>&1 &'
+[2026-02-20T19:03:51] service restart completed
+[2026-02-20T19:03:51] [DRY-RUN] webhook POST to https://example.com/your-webhook: [Watchdog] Recovery completed
+reason=health_check_failed; from=qwen2.5:7b; to=llama3.1:8b
+[2026-02-20T19:03:51] [DRY-RUN] command: bash -lc 'echo '"'"'[Watchdog] Recovery completed
+reason=health_check_failed; from=qwen2.5:7b; to=llama3.1:8b'"'"''
+[2026-02-20T19:03:54] memory usage=26.43%
+[2026-02-20T19:03:54] [DRY-RUN] command: ollama ps
+[2026-02-20T19:03:54] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:03:54] health fail count=1
+[2026-02-20T19:03:56] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:03:56] [DRY-RUN] command: ollama ps
+[2026-02-20T19:03:56] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:03:56] health fail count=1
+[2026-02-20T19:03:59] memory usage=26.98%
+[2026-02-20T19:03:59] [DRY-RUN] command: ollama ps
+[2026-02-20T19:03:59] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:03:59] health fail count=2
+[2026-02-20T19:04:01] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:04:01] [DRY-RUN] command: ollama ps
+[2026-02-20T19:04:01] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:04:01] health fail count=2
+[2026-02-20T19:04:04] memory usage=26.93%
+[2026-02-20T19:04:04] [DRY-RUN] command: ollama ps
+[2026-02-20T19:04:04] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:04:04] health fail count=3
+[2026-02-20T19:04:04] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:04:06] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:04:06] [DRY-RUN] command: ollama ps
+[2026-02-20T19:04:06] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:04:06] health fail count=3
+[2026-02-20T19:04:06] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:04:09] memory usage=26.85%
+[2026-02-20T19:04:09] [DRY-RUN] command: ollama ps
+[2026-02-20T19:04:09] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:04:09] health fail count=1
+[2026-02-20T19:04:11] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:04:11] [DRY-RUN] command: ollama ps
+[2026-02-20T19:04:11] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:04:11] health fail count=1
+[2026-02-20T19:04:14] memory usage=27.01%
+[2026-02-20T19:04:14] [DRY-RUN] command: ollama ps
+[2026-02-20T19:04:14] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:04:14] health fail count=2
+[2026-02-20T19:04:16] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:04:16] [DRY-RUN] command: ollama ps
+[2026-02-20T19:04:16] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:04:16] health fail count=2
+[2026-02-20T19:04:19] profile mode enabled, start profile=full
+[2026-02-20T19:04:19] watchdog started
+[2026-02-20T19:04:19] memory usage=27.34%
+[2026-02-20T19:04:19] [DRY-RUN] command: ollama ps
+[2026-02-20T19:04:19] memory usage=27.29%
+[2026-02-20T19:04:19] [DRY-RUN] command: ollama ps
+[2026-02-20T19:04:19] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:04:19] health fail count=3
+[2026-02-20T19:04:19] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:04:21] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:04:21] [DRY-RUN] command: ollama ps
+[2026-02-20T19:04:21] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:04:21] health fail count=3
+[2026-02-20T19:04:21] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:04:24] memory usage=26.92%
+[2026-02-20T19:04:24] [DRY-RUN] command: ollama ps
+[2026-02-20T19:04:24] memory usage=26.82%
+[2026-02-20T19:04:24] [DRY-RUN] command: ollama ps
+[2026-02-20T19:04:24] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:04:24] health fail count=1
+[2026-02-20T19:04:26] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:04:26] [DRY-RUN] command: ollama ps
+[2026-02-20T19:04:26] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:04:26] health fail count=1
+[2026-02-20T19:04:29] memory usage=26.84%
+[2026-02-20T19:04:29] [DRY-RUN] command: ollama ps
+[2026-02-20T19:04:29] memory usage=26.84%
+[2026-02-20T19:04:29] [DRY-RUN] command: ollama ps
+[2026-02-20T19:04:29] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:04:29] health fail count=2
+[2026-02-20T19:04:31] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:04:31] [DRY-RUN] command: ollama ps
+[2026-02-20T19:04:31] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:04:31] health fail count=2
+[2026-02-20T19:04:34] memory usage=26.69%
+[2026-02-20T19:04:34] [DRY-RUN] command: ollama ps
+[2026-02-20T19:04:34] memory usage=26.75%
+[2026-02-20T19:04:34] [DRY-RUN] command: ollama ps
+[2026-02-20T19:04:34] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:04:34] health fail count=3
+[2026-02-20T19:04:34] recovery start: health_check_failed, model=qwen2.5:7b
+[2026-02-20T19:04:34] [DRY-RUN] command: bash -lc 'opclaw model use llama3.1:8b'
+[2026-02-20T19:04:34] switched model -> llama3.1:8b
+[2026-02-20T19:04:34] [DRY-RUN] command: bash -lc 'pkill -f opclaw || true; sleep 1; opclaw serve >/tmp/opclaw.log 2>&1 &'
+[2026-02-20T19:04:34] service restart completed
+[2026-02-20T19:04:34] [DRY-RUN] webhook POST to https://example.com/your-webhook: [Watchdog] Recovery completed
+reason=health_check_failed; from=qwen2.5:7b; to=llama3.1:8b
+[2026-02-20T19:04:34] [DRY-RUN] command: bash -lc 'echo '"'"'[Watchdog] Recovery completed
+reason=health_check_failed; from=qwen2.5:7b; to=llama3.1:8b'"'"''
+[2026-02-20T19:04:36] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:04:36] [DRY-RUN] command: ollama ps
+[2026-02-20T19:04:36] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:04:36] health fail count=3
+[2026-02-20T19:04:36] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:04:39] memory usage=26.79%
+[2026-02-20T19:04:39] [DRY-RUN] command: ollama ps
+[2026-02-20T19:04:39] memory usage=26.79%
+[2026-02-20T19:04:39] [DRY-RUN] command: ollama ps
+[2026-02-20T19:04:39] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:04:39] health fail count=1
+[2026-02-20T19:04:42] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:04:42] [DRY-RUN] command: ollama ps
+[2026-02-20T19:04:42] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:04:42] health fail count=1
+[2026-02-20T19:04:44] memory usage=26.69%
+[2026-02-20T19:04:44] [DRY-RUN] command: ollama ps
+[2026-02-20T19:04:44] memory usage=26.82%
+[2026-02-20T19:04:44] [DRY-RUN] command: ollama ps
+[2026-02-20T19:04:44] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:04:44] health fail count=2
+[2026-02-20T19:04:47] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:04:47] [DRY-RUN] command: ollama ps
+[2026-02-20T19:04:47] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:04:47] health fail count=2
+[2026-02-20T19:04:49] memory usage=26.78%
+[2026-02-20T19:04:49] [DRY-RUN] command: ollama ps
+[2026-02-20T19:04:49] memory usage=26.83%
+[2026-02-20T19:04:49] [DRY-RUN] command: ollama ps
+[2026-02-20T19:04:49] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:04:49] health fail count=3
+[2026-02-20T19:04:49] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:04:52] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:04:52] [DRY-RUN] command: ollama ps
+[2026-02-20T19:04:52] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:04:52] health fail count=3
+[2026-02-20T19:04:52] recovery start: health_check_failed, model=llama3.1:8b
+[2026-02-20T19:04:52] [DRY-RUN] command: bash -lc 'opclaw model use qwen2.5:7b'
+[2026-02-20T19:04:52] switched model -> qwen2.5:7b
+[2026-02-20T19:04:52] [DRY-RUN] command: bash -lc 'pkill -f opclaw || true; sleep 1; opclaw serve >/tmp/opclaw.log 2>&1 &'
+[2026-02-20T19:04:52] service restart completed
+[2026-02-20T19:04:52] [DRY-RUN] webhook POST to https://example.com/your-webhook: [Watchdog] Recovery completed
+reason=health_check_failed; from=llama3.1:8b; to=qwen2.5:7b
+[2026-02-20T19:04:52] [DRY-RUN] command: bash -lc 'echo '"'"'[Watchdog] Recovery completed
+reason=health_check_failed; from=llama3.1:8b; to=qwen2.5:7b'"'"''
+[2026-02-20T19:04:54] memory usage=26.71%
+[2026-02-20T19:04:54] [DRY-RUN] command: ollama ps
+[2026-02-20T19:04:54] memory usage=26.81%
+[2026-02-20T19:04:54] [DRY-RUN] command: ollama ps
+[2026-02-20T19:04:54] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:04:54] health fail count=1
+[2026-02-20T19:04:57] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:04:57] [DRY-RUN] command: ollama ps
+[2026-02-20T19:04:57] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:04:57] health fail count=1
+[2026-02-20T19:04:59] memory usage=26.67%
+[2026-02-20T19:04:59] [DRY-RUN] command: ollama ps
+[2026-02-20T19:04:59] memory usage=26.77%
+[2026-02-20T19:04:59] [DRY-RUN] command: ollama ps
+[2026-02-20T19:04:59] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:04:59] health fail count=2
+[2026-02-20T19:05:02] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:05:02] [DRY-RUN] command: ollama ps
+[2026-02-20T19:05:02] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:05:02] health fail count=2
+[2026-02-20T19:05:04] memory usage=27.39%
+[2026-02-20T19:05:04] [DRY-RUN] command: ollama ps
+[2026-02-20T19:05:04] memory usage=27.46%
+[2026-02-20T19:05:04] [DRY-RUN] command: ollama ps
+[2026-02-20T19:05:04] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:05:04] health fail count=3
+[2026-02-20T19:05:04] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:05:07] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:05:07] [DRY-RUN] command: ollama ps
+[2026-02-20T19:05:07] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:05:07] health fail count=3
+[2026-02-20T19:05:07] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:05:09] memory usage=27.29%
+[2026-02-20T19:05:09] [DRY-RUN] command: ollama ps
+[2026-02-20T19:05:09] memory usage=27.37%
+[2026-02-20T19:05:09] [DRY-RUN] command: ollama ps
+[2026-02-20T19:05:09] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:05:09] health fail count=1
+[2026-02-20T19:05:12] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:05:12] [DRY-RUN] command: ollama ps
+[2026-02-20T19:05:12] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:05:12] health fail count=1
+[2026-02-20T19:05:14] memory usage=27.28%
+[2026-02-20T19:05:14] [DRY-RUN] command: ollama ps
+[2026-02-20T19:05:14] memory usage=27.37%
+[2026-02-20T19:05:14] [DRY-RUN] command: ollama ps
+[2026-02-20T19:05:14] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:05:14] health fail count=2
+[2026-02-20T19:05:17] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:05:17] [DRY-RUN] command: ollama ps
+[2026-02-20T19:05:17] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:05:17] health fail count=2
+[2026-02-20T19:05:19] memory usage=27.00%
+[2026-02-20T19:05:19] [DRY-RUN] command: ollama ps
+[2026-02-20T19:05:19] memory usage=27.04%
+[2026-02-20T19:05:19] [DRY-RUN] command: ollama ps
+[2026-02-20T19:05:19] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:05:19] health fail count=3
+[2026-02-20T19:05:19] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:05:22] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:05:22] [DRY-RUN] command: ollama ps
+[2026-02-20T19:05:22] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:05:22] health fail count=3
+[2026-02-20T19:05:22] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:05:24] memory usage=27.29%
+[2026-02-20T19:05:24] [DRY-RUN] command: ollama ps
+[2026-02-20T19:05:24] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:05:24] health fail count=1
+[2026-02-20T19:05:27] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:05:27] [DRY-RUN] command: ollama ps
+[2026-02-20T19:05:27] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:05:27] health fail count=1
+[2026-02-20T19:05:30] memory usage=26.97%
+[2026-02-20T19:05:30] [DRY-RUN] command: ollama ps
+[2026-02-20T19:05:30] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:05:30] health fail count=2
+[2026-02-20T19:05:31] profile mode enabled, start profile=full
+[2026-02-20T19:05:31] watchdog started
+[2026-02-20T19:05:31] memory usage=26.98%
+[2026-02-20T19:05:32] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:05:32] [DRY-RUN] command: ollama ps
+[2026-02-20T19:05:32] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:05:32] health fail count=2
+[2026-02-20T19:05:35] memory usage=26.83%
+[2026-02-20T19:05:35] [DRY-RUN] command: ollama ps
+[2026-02-20T19:05:35] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:05:35] health fail count=3
+[2026-02-20T19:05:35] recovery start: health_check_failed, model=llama3.1:8b
+[2026-02-20T19:05:35] [DRY-RUN] command: bash -lc 'opclaw model use qwen2.5:7b'
+[2026-02-20T19:05:35] switched model -> qwen2.5:7b
+[2026-02-20T19:05:35] [DRY-RUN] command: bash -lc 'pkill -f opclaw || true; sleep 1; opclaw serve >/tmp/opclaw.log 2>&1 &'
+[2026-02-20T19:05:35] service restart completed
+[2026-02-20T19:05:35] [DRY-RUN] webhook POST to https://example.com/your-webhook: [Watchdog] Recovery completed
+reason=health_check_failed; from=llama3.1:8b; to=qwen2.5:7b
+[2026-02-20T19:05:35] [DRY-RUN] command: bash -lc 'echo '"'"'[Watchdog] Recovery completed
+reason=health_check_failed; from=llama3.1:8b; to=qwen2.5:7b'"'"''
+[2026-02-20T19:05:36] memory usage=26.62%
+[2026-02-20T19:05:37] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:05:37] [DRY-RUN] command: ollama ps
+[2026-02-20T19:05:37] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:05:37] health fail count=3
+[2026-02-20T19:05:37] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:05:40] memory usage=27.32%
+[2026-02-20T19:05:40] [DRY-RUN] command: ollama ps
+[2026-02-20T19:05:40] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:05:40] health fail count=1
+[2026-02-20T19:05:41] memory usage=27.26%
+[2026-02-20T19:05:42] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:05:42] [DRY-RUN] command: ollama ps
+[2026-02-20T19:05:42] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:05:42] health fail count=1
+[2026-02-20T19:05:45] memory usage=27.31%
+[2026-02-20T19:05:45] [DRY-RUN] command: ollama ps
+[2026-02-20T19:05:45] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:05:45] health fail count=2
+[2026-02-20T19:05:46] memory usage=27.28%
+[2026-02-20T19:05:47] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:05:47] [DRY-RUN] command: ollama ps
+[2026-02-20T19:05:47] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:05:47] health fail count=2
+[2026-02-20T19:05:50] memory usage=27.23%
+[2026-02-20T19:05:50] [DRY-RUN] command: ollama ps
+[2026-02-20T19:05:50] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:05:50] health fail count=3
+[2026-02-20T19:05:50] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:05:51] memory usage=27.15%
+[2026-02-20T19:05:52] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:05:52] [DRY-RUN] command: ollama ps
+[2026-02-20T19:05:52] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:05:52] health fail count=3
+[2026-02-20T19:05:52] recovery start: health_check_failed, model=qwen2.5:7b
+[2026-02-20T19:05:52] [DRY-RUN] command: bash -lc 'opclaw model use llama3.1:8b'
+[2026-02-20T19:05:52] switched model -> llama3.1:8b
+[2026-02-20T19:05:52] [DRY-RUN] command: bash -lc 'pkill -f opclaw || true; sleep 1; opclaw serve >/tmp/opclaw.log 2>&1 &'
+[2026-02-20T19:05:52] service restart completed
+[2026-02-20T19:05:52] [DRY-RUN] webhook POST to https://example.com/your-webhook: [Watchdog] Recovery completed
+reason=health_check_failed; from=qwen2.5:7b; to=llama3.1:8b
+[2026-02-20T19:05:52] [DRY-RUN] command: bash -lc 'echo '"'"'[Watchdog] Recovery completed
+reason=health_check_failed; from=qwen2.5:7b; to=llama3.1:8b'"'"''
+[2026-02-20T19:05:55] memory usage=27.12%
+[2026-02-20T19:05:55] [DRY-RUN] command: ollama ps
+[2026-02-20T19:05:55] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:05:55] health fail count=1
+[2026-02-20T19:05:56] memory usage=27.08%
+[2026-02-20T19:05:57] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:05:57] [DRY-RUN] command: ollama ps
+[2026-02-20T19:05:57] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:05:57] health fail count=1
+[2026-02-20T19:06:00] memory usage=27.11%
+[2026-02-20T19:06:00] [DRY-RUN] command: ollama ps
+[2026-02-20T19:06:00] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:06:00] health fail count=2
+[2026-02-20T19:06:01] memory usage=27.10%
+[2026-02-20T19:06:02] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:06:02] [DRY-RUN] command: ollama ps
+[2026-02-20T19:06:02] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:06:02] health fail count=2
+[2026-02-20T19:06:05] memory usage=27.13%
+[2026-02-20T19:06:05] [DRY-RUN] command: ollama ps
+[2026-02-20T19:06:05] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:06:05] health fail count=3
+[2026-02-20T19:06:05] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:06:06] memory usage=27.05%
+[2026-02-20T19:06:07] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:06:07] [DRY-RUN] command: ollama ps
+[2026-02-20T19:06:07] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:06:07] health fail count=3
+[2026-02-20T19:06:07] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:06:10] memory usage=27.11%
+[2026-02-20T19:06:10] [DRY-RUN] command: ollama ps
+[2026-02-20T19:06:10] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:06:10] health fail count=1
+[2026-02-20T19:06:11] memory usage=27.03%
+[2026-02-20T19:06:12] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:06:12] [DRY-RUN] command: ollama ps
+[2026-02-20T19:06:12] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:06:12] health fail count=1
+[2026-02-20T19:06:15] memory usage=27.12%
+[2026-02-20T19:06:15] [DRY-RUN] command: ollama ps
+[2026-02-20T19:06:15] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:06:15] health fail count=2
+[2026-02-20T19:06:16] memory usage=27.04%
+[2026-02-20T19:06:17] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:06:17] [DRY-RUN] command: ollama ps
+[2026-02-20T19:06:17] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:06:17] health fail count=2
+[2026-02-20T19:06:20] memory usage=27.08%
+[2026-02-20T19:06:20] [DRY-RUN] command: ollama ps
+[2026-02-20T19:06:20] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:06:20] health fail count=3
+[2026-02-20T19:06:20] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:06:21] memory usage=27.00%
+[2026-02-20T19:06:22] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:06:22] [DRY-RUN] command: ollama ps
+[2026-02-20T19:06:22] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:06:22] health fail count=3
+[2026-02-20T19:06:22] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:06:25] memory usage=27.11%
+[2026-02-20T19:06:25] [DRY-RUN] command: ollama ps
+[2026-02-20T19:06:25] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:06:25] health fail count=1
+[2026-02-20T19:06:26] memory usage=27.05%
+[2026-02-20T19:06:27] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:06:27] [DRY-RUN] command: ollama ps
+[2026-02-20T19:06:27] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:06:27] health fail count=1
+[2026-02-20T19:06:30] memory usage=27.13%
+[2026-02-20T19:06:30] [DRY-RUN] command: ollama ps
+[2026-02-20T19:06:30] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:06:30] health fail count=2
+[2026-02-20T19:06:31] memory usage=27.06%
+[2026-02-20T19:06:32] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:06:32] [DRY-RUN] command: ollama ps
+[2026-02-20T19:06:32] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:06:32] health fail count=2
+[2026-02-20T19:06:35] memory usage=27.08%
+[2026-02-20T19:06:35] [DRY-RUN] command: ollama ps
+[2026-02-20T19:06:35] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:06:35] health fail count=3
+[2026-02-20T19:06:35] recovery start: health_check_failed, model=qwen2.5:7b
+[2026-02-20T19:06:35] [DRY-RUN] command: bash -lc 'opclaw model use llama3.1:8b'
+[2026-02-20T19:06:35] switched model -> llama3.1:8b
+[2026-02-20T19:06:35] [DRY-RUN] command: bash -lc 'pkill -f opclaw || true; sleep 1; opclaw serve >/tmp/opclaw.log 2>&1 &'
+[2026-02-20T19:06:35] service restart completed
+[2026-02-20T19:06:35] [DRY-RUN] webhook POST to https://example.com/your-webhook: [Watchdog] Recovery completed
+reason=health_check_failed; from=qwen2.5:7b; to=llama3.1:8b
+[2026-02-20T19:06:35] [DRY-RUN] command: bash -lc 'echo '"'"'[Watchdog] Recovery completed
+reason=health_check_failed; from=qwen2.5:7b; to=llama3.1:8b'"'"''
+[2026-02-20T19:06:36] memory usage=27.02%
+[2026-02-20T19:06:37] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:06:37] [DRY-RUN] command: ollama ps
+[2026-02-20T19:06:37] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:06:37] health fail count=3
+[2026-02-20T19:06:37] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:06:40] memory usage=27.15%
+[2026-02-20T19:06:40] [DRY-RUN] command: ollama ps
+[2026-02-20T19:06:40] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:06:40] health fail count=1
+[2026-02-20T19:06:41] memory usage=27.07%
+[2026-02-20T19:06:42] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:06:42] [DRY-RUN] command: ollama ps
+[2026-02-20T19:06:42] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:06:42] health fail count=1
+[2026-02-20T19:06:45] memory usage=27.12%
+[2026-02-20T19:06:45] [DRY-RUN] command: ollama ps
+[2026-02-20T19:06:45] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:06:45] health fail count=2
+[2026-02-20T19:06:46] memory usage=27.29%
+[2026-02-20T19:06:47] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:06:47] [DRY-RUN] command: ollama ps
+[2026-02-20T19:06:47] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:06:47] health fail count=2
+[2026-02-20T19:06:50] memory usage=27.25%
+[2026-02-20T19:06:50] [DRY-RUN] command: ollama ps
+[2026-02-20T19:06:50] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:06:50] health fail count=3
+[2026-02-20T19:06:50] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:06:51] memory usage=27.11%
+[2026-02-20T19:06:52] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:06:52] [DRY-RUN] command: ollama ps
+[2026-02-20T19:06:52] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:06:52] health fail count=3
+[2026-02-20T19:06:52] recovery start: health_check_failed, model=llama3.1:8b
+[2026-02-20T19:06:52] [DRY-RUN] command: bash -lc 'opclaw model use qwen2.5:7b'
+[2026-02-20T19:06:52] switched model -> qwen2.5:7b
+[2026-02-20T19:06:52] [DRY-RUN] command: bash -lc 'pkill -f opclaw || true; sleep 1; opclaw serve >/tmp/opclaw.log 2>&1 &'
+[2026-02-20T19:06:52] service restart completed
+[2026-02-20T19:06:52] [DRY-RUN] webhook POST to https://example.com/your-webhook: [Watchdog] Recovery completed
+reason=health_check_failed; from=llama3.1:8b; to=qwen2.5:7b
+[2026-02-20T19:06:52] [DRY-RUN] command: bash -lc 'echo '"'"'[Watchdog] Recovery completed
+reason=health_check_failed; from=llama3.1:8b; to=qwen2.5:7b'"'"''
+[2026-02-20T19:06:55] memory usage=27.15%
+[2026-02-20T19:06:55] [DRY-RUN] command: ollama ps
+[2026-02-20T19:06:55] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:06:55] health fail count=1
+[2026-02-20T19:06:56] memory usage=27.12%
+[2026-02-20T19:06:57] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:06:57] [DRY-RUN] command: ollama ps
+[2026-02-20T19:06:57] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:06:57] health fail count=1
+[2026-02-20T19:07:00] memory usage=27.13%
+[2026-02-20T19:07:00] [DRY-RUN] command: ollama ps
+[2026-02-20T19:07:00] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:07:00] health fail count=2
+[2026-02-20T19:07:01] memory usage=27.04%
+[2026-02-20T19:07:02] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:07:02] [DRY-RUN] command: ollama ps
+[2026-02-20T19:07:02] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:07:02] health fail count=2
+[2026-02-20T19:07:05] memory usage=27.17%
+[2026-02-20T19:07:05] [DRY-RUN] command: ollama ps
+[2026-02-20T19:07:05] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:07:05] health fail count=3
+[2026-02-20T19:07:05] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:07:07] memory usage=27.10%
+[2026-02-20T19:07:07] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:07:07] [DRY-RUN] command: ollama ps
+[2026-02-20T19:07:07] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:07:07] health fail count=3
+[2026-02-20T19:07:07] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:07:10] memory usage=27.16%
+[2026-02-20T19:07:10] [DRY-RUN] command: ollama ps
+[2026-02-20T19:07:10] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:07:10] health fail count=1
+[2026-02-20T19:07:12] memory usage=27.07%
+[2026-02-20T19:07:12] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:07:12] [DRY-RUN] command: ollama ps
+[2026-02-20T19:07:12] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:07:12] health fail count=1
+[2026-02-20T19:07:15] memory usage=27.21%
+[2026-02-20T19:07:15] [DRY-RUN] command: ollama ps
+[2026-02-20T19:07:15] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:07:15] health fail count=2
+[2026-02-20T19:07:17] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:07:17] [DRY-RUN] command: ollama ps
+[2026-02-20T19:07:17] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:07:17] health fail count=2
+[2026-02-20T19:07:20] memory usage=27.20%
+[2026-02-20T19:07:20] [DRY-RUN] command: ollama ps
+[2026-02-20T19:07:20] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:07:20] health fail count=3
+[2026-02-20T19:07:20] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:07:22] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:07:22] [DRY-RUN] command: ollama ps
+[2026-02-20T19:07:22] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:07:22] health fail count=3
+[2026-02-20T19:07:22] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:07:25] memory usage=27.15%
+[2026-02-20T19:07:25] [DRY-RUN] command: ollama ps
+[2026-02-20T19:07:25] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:07:25] health fail count=1
+[2026-02-20T19:07:27] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:07:27] [DRY-RUN] command: ollama ps
+[2026-02-20T19:07:27] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:07:27] health fail count=1
+[2026-02-20T19:07:30] memory usage=27.08%
+[2026-02-20T19:07:30] [DRY-RUN] command: ollama ps
+[2026-02-20T19:07:30] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:07:30] health fail count=2
+[2026-02-20T19:07:32] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:07:32] [DRY-RUN] command: ollama ps
+[2026-02-20T19:07:32] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:07:32] health fail count=2
+[2026-02-20T19:07:35] memory usage=27.10%
+[2026-02-20T19:07:35] [DRY-RUN] command: ollama ps
+[2026-02-20T19:07:35] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:07:35] health fail count=3
+[2026-02-20T19:07:35] recovery start: health_check_failed, model=llama3.1:8b
+[2026-02-20T19:07:35] [DRY-RUN] command: bash -lc 'opclaw model use qwen2.5:7b'
+[2026-02-20T19:07:35] switched model -> qwen2.5:7b
+[2026-02-20T19:07:35] [DRY-RUN] command: bash -lc 'pkill -f opclaw || true; sleep 1; opclaw serve >/tmp/opclaw.log 2>&1 &'
+[2026-02-20T19:07:35] service restart completed
+[2026-02-20T19:07:35] [DRY-RUN] webhook POST to https://example.com/your-webhook: [Watchdog] Recovery completed
+reason=health_check_failed; from=llama3.1:8b; to=qwen2.5:7b
+[2026-02-20T19:07:35] [DRY-RUN] command: bash -lc 'echo '"'"'[Watchdog] Recovery completed
+reason=health_check_failed; from=llama3.1:8b; to=qwen2.5:7b'"'"''
+[2026-02-20T19:07:37] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:07:37] [DRY-RUN] command: ollama ps
+[2026-02-20T19:07:37] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:07:37] health fail count=3
+[2026-02-20T19:07:37] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:07:38] profile mode enabled, start profile=full
+[2026-02-20T19:07:38] emergency fallback start -> gemini (manual_test)
+[2026-02-20T19:07:38] [DRY-RUN] command: bash -lc 'openclaw provider use gemini && openclaw model use gemini-2.0-flash'
+[2026-02-20T19:07:38] [DRY-RUN] command: bash -lc 'pkill -f openclaw || true; sleep 1; openclaw serve >/tmp/openclaw.log 2>&1 &'
+[2026-02-20T19:07:38] emergency fallback activated -> gemini
+[2026-02-20T19:07:40] memory usage=27.13%
+[2026-02-20T19:07:40] [DRY-RUN] command: ollama ps
+[2026-02-20T19:07:40] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:07:40] health fail count=1
+[2026-02-20T19:07:42] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:07:42] [DRY-RUN] command: ollama ps
+[2026-02-20T19:07:42] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:07:42] health fail count=1
+[2026-02-20T19:07:45] memory usage=27.28%
+[2026-02-20T19:07:45] [DRY-RUN] command: ollama ps
+[2026-02-20T19:07:45] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:07:45] health fail count=2
+[2026-02-20T19:07:47] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:07:47] [DRY-RUN] command: ollama ps
+[2026-02-20T19:07:47] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:07:47] health fail count=2
+[2026-02-20T19:07:50] memory usage=27.25%
+[2026-02-20T19:07:50] [DRY-RUN] command: ollama ps
+[2026-02-20T19:07:50] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:07:50] health fail count=3
+[2026-02-20T19:07:50] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:07:52] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:07:52] [DRY-RUN] command: ollama ps
+[2026-02-20T19:07:52] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:07:52] health fail count=3
+[2026-02-20T19:07:52] recovery start: health_check_failed, model=qwen2.5:7b
+[2026-02-20T19:07:52] [DRY-RUN] command: bash -lc 'opclaw model use llama3.1:8b'
+[2026-02-20T19:07:52] switched model -> llama3.1:8b
+[2026-02-20T19:07:52] [DRY-RUN] command: bash -lc 'pkill -f opclaw || true; sleep 1; opclaw serve >/tmp/opclaw.log 2>&1 &'
+[2026-02-20T19:07:52] service restart completed
+[2026-02-20T19:07:52] [DRY-RUN] webhook POST to https://example.com/your-webhook: [Watchdog] Recovery completed
+reason=health_check_failed; from=qwen2.5:7b; to=llama3.1:8b
+[2026-02-20T19:07:52] [DRY-RUN] command: bash -lc 'echo '"'"'[Watchdog] Recovery completed
+reason=health_check_failed; from=qwen2.5:7b; to=llama3.1:8b'"'"''
+[2026-02-20T19:07:55] memory usage=27.02%
+[2026-02-20T19:07:55] [DRY-RUN] command: ollama ps
+[2026-02-20T19:07:55] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:07:55] health fail count=1
+[2026-02-20T19:07:55] profile mode enabled, start profile=full
+[2026-02-20T19:07:55] watchdog started
+[2026-02-20T19:07:55] memory usage=26.98%
+[2026-02-20T19:07:57] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:07:57] [DRY-RUN] command: ollama ps
+[2026-02-20T19:07:57] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:07:57] health fail count=1
+[2026-02-20T19:08:00] memory usage=27.28%
+[2026-02-20T19:08:00] [DRY-RUN] command: ollama ps
+[2026-02-20T19:08:00] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:08:00] health fail count=2
+[2026-02-20T19:08:00] memory usage=27.30%
+[2026-02-20T19:08:02] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:08:02] [DRY-RUN] command: ollama ps
+[2026-02-20T19:08:02] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:08:02] health fail count=2
+[2026-02-20T19:08:05] memory usage=26.94%
+[2026-02-20T19:08:05] [DRY-RUN] command: ollama ps
+[2026-02-20T19:08:05] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:08:05] health fail count=3
+[2026-02-20T19:08:05] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:08:05] memory usage=26.83%
+[2026-02-20T19:08:07] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:08:07] [DRY-RUN] command: ollama ps
+[2026-02-20T19:08:07] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:08:07] health fail count=3
+[2026-02-20T19:08:07] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:08:10] memory usage=27.37%
+[2026-02-20T19:08:10] [DRY-RUN] command: ollama ps
+[2026-02-20T19:08:10] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:08:10] health fail count=1
+[2026-02-20T19:08:10] memory usage=27.32%
+[2026-02-20T19:08:13] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:08:13] [DRY-RUN] command: ollama ps
+[2026-02-20T19:08:13] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:08:13] health fail count=1
+[2026-02-20T19:08:15] memory usage=27.31%
+[2026-02-20T19:08:15] [DRY-RUN] command: ollama ps
+[2026-02-20T19:08:15] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:08:15] health fail count=2
+[2026-02-20T19:08:15] memory usage=27.25%
+[2026-02-20T19:08:18] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:08:18] [DRY-RUN] command: ollama ps
+[2026-02-20T19:08:18] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:08:18] health fail count=2
+[2026-02-20T19:08:20] memory usage=27.20%
+[2026-02-20T19:08:20] [DRY-RUN] command: ollama ps
+[2026-02-20T19:08:20] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:08:20] health fail count=3
+[2026-02-20T19:08:20] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:08:20] memory usage=27.16%
+[2026-02-20T19:08:23] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:08:23] [DRY-RUN] command: ollama ps
+[2026-02-20T19:08:23] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:08:23] health fail count=3
+[2026-02-20T19:08:23] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:08:25] memory usage=27.20%
+[2026-02-20T19:08:25] [DRY-RUN] command: ollama ps
+[2026-02-20T19:08:25] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:08:25] health fail count=1
+[2026-02-20T19:08:26] memory usage=27.15%
+[2026-02-20T19:08:28] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:08:28] [DRY-RUN] command: ollama ps
+[2026-02-20T19:08:28] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:08:28] health fail count=1
+[2026-02-20T19:08:30] memory usage=27.15%
+[2026-02-20T19:08:30] [DRY-RUN] command: ollama ps
+[2026-02-20T19:08:30] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:08:30] health fail count=2
+[2026-02-20T19:08:31] memory usage=27.13%
+[2026-02-20T19:08:33] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:08:33] [DRY-RUN] command: ollama ps
+[2026-02-20T19:08:33] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:08:33] health fail count=2
+[2026-02-20T19:08:35] memory usage=27.22%
+[2026-02-20T19:08:35] [DRY-RUN] command: ollama ps
+[2026-02-20T19:08:35] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:08:35] health fail count=3
+[2026-02-20T19:08:35] recovery start: health_check_failed, model=qwen2.5:7b
+[2026-02-20T19:08:35] [DRY-RUN] command: bash -lc 'opclaw model use llama3.1:8b'
+[2026-02-20T19:08:35] switched model -> llama3.1:8b
+[2026-02-20T19:08:35] [DRY-RUN] command: bash -lc 'pkill -f opclaw || true; sleep 1; opclaw serve >/tmp/opclaw.log 2>&1 &'
+[2026-02-20T19:08:35] service restart completed
+[2026-02-20T19:08:35] [DRY-RUN] webhook POST to https://example.com/your-webhook: [Watchdog] Recovery completed
+reason=health_check_failed; from=qwen2.5:7b; to=llama3.1:8b
+[2026-02-20T19:08:35] [DRY-RUN] command: bash -lc 'echo '"'"'[Watchdog] Recovery completed
+reason=health_check_failed; from=qwen2.5:7b; to=llama3.1:8b'"'"''
+[2026-02-20T19:08:36] memory usage=27.17%
+[2026-02-20T19:08:38] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:08:38] [DRY-RUN] command: ollama ps
+[2026-02-20T19:08:38] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:08:38] health fail count=3
+[2026-02-20T19:08:38] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:08:40] memory usage=27.27%
+[2026-02-20T19:08:40] [DRY-RUN] command: ollama ps
+[2026-02-20T19:08:40] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:08:40] health fail count=1
+[2026-02-20T19:08:41] memory usage=27.20%
+[2026-02-20T19:08:43] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:08:43] [DRY-RUN] command: ollama ps
+[2026-02-20T19:08:43] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:08:43] health fail count=1
+[2026-02-20T19:08:45] memory usage=27.27%
+[2026-02-20T19:08:45] [DRY-RUN] command: ollama ps
+[2026-02-20T19:08:45] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:08:45] health fail count=2
+[2026-02-20T19:08:46] memory usage=27.21%
+[2026-02-20T19:08:48] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:08:48] [DRY-RUN] command: ollama ps
+[2026-02-20T19:08:48] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:08:48] health fail count=2
+[2026-02-20T19:08:50] memory usage=27.25%
+[2026-02-20T19:08:50] [DRY-RUN] command: ollama ps
+[2026-02-20T19:08:50] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:08:50] health fail count=3
+[2026-02-20T19:08:50] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:08:51] memory usage=27.19%
+[2026-02-20T19:08:53] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:08:53] [DRY-RUN] command: ollama ps
+[2026-02-20T19:08:53] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:08:53] health fail count=3
+[2026-02-20T19:08:53] recovery start: health_check_failed, model=llama3.1:8b
+[2026-02-20T19:08:53] [DRY-RUN] command: bash -lc 'opclaw model use qwen2.5:7b'
+[2026-02-20T19:08:53] switched model -> qwen2.5:7b
+[2026-02-20T19:08:53] [DRY-RUN] command: bash -lc 'pkill -f opclaw || true; sleep 1; opclaw serve >/tmp/opclaw.log 2>&1 &'
+[2026-02-20T19:08:53] service restart completed
+[2026-02-20T19:08:53] [DRY-RUN] webhook POST to https://example.com/your-webhook: [Watchdog] Recovery completed
+reason=health_check_failed; from=llama3.1:8b; to=qwen2.5:7b
+[2026-02-20T19:08:53] [DRY-RUN] command: bash -lc 'echo '"'"'[Watchdog] Recovery completed
+reason=health_check_failed; from=llama3.1:8b; to=qwen2.5:7b'"'"''
+[2026-02-20T19:08:55] memory usage=27.27%
+[2026-02-20T19:08:55] [DRY-RUN] command: ollama ps
+[2026-02-20T19:08:55] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:08:55] health fail count=1
+[2026-02-20T19:08:56] memory usage=27.21%
+[2026-02-20T19:08:58] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:08:58] [DRY-RUN] command: ollama ps
+[2026-02-20T19:08:58] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:08:58] health fail count=1
+[2026-02-20T19:09:00] memory usage=27.21%
+[2026-02-20T19:09:00] [DRY-RUN] command: ollama ps
+[2026-02-20T19:09:00] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:09:00] health fail count=2
+[2026-02-20T19:09:01] memory usage=27.17%
+[2026-02-20T19:09:03] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:09:03] [DRY-RUN] command: ollama ps
+[2026-02-20T19:09:03] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:09:03] health fail count=2
+[2026-02-20T19:09:05] memory usage=27.28%
+[2026-02-20T19:09:05] [DRY-RUN] command: ollama ps
+[2026-02-20T19:09:05] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:09:05] health fail count=3
+[2026-02-20T19:09:05] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:09:06] memory usage=27.26%
+[2026-02-20T19:09:08] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:09:08] [DRY-RUN] command: ollama ps
+[2026-02-20T19:09:08] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:09:08] health fail count=3
+[2026-02-20T19:09:08] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:09:10] memory usage=27.28%
+[2026-02-20T19:09:10] [DRY-RUN] command: ollama ps
+[2026-02-20T19:09:10] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:09:10] health fail count=1
+[2026-02-20T19:09:11] memory usage=27.24%
+[2026-02-20T19:09:13] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:09:13] [DRY-RUN] command: ollama ps
+[2026-02-20T19:09:13] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:09:13] health fail count=1
+[2026-02-20T19:09:15] memory usage=27.32%
+[2026-02-20T19:09:15] [DRY-RUN] command: ollama ps
+[2026-02-20T19:09:15] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:09:15] health fail count=2
+[2026-02-20T19:09:18] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:09:18] [DRY-RUN] command: ollama ps
+[2026-02-20T19:09:18] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:09:18] health fail count=2
+[2026-02-20T19:09:20] memory usage=27.35%
+[2026-02-20T19:09:20] [DRY-RUN] command: ollama ps
+[2026-02-20T19:09:20] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:09:20] health fail count=3
+[2026-02-20T19:09:20] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:09:23] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:09:23] [DRY-RUN] command: ollama ps
+[2026-02-20T19:09:23] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:09:23] health fail count=3
+[2026-02-20T19:09:23] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:09:25] memory usage=27.02%
+[2026-02-20T19:09:25] [DRY-RUN] command: ollama ps
+[2026-02-20T19:09:25] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:09:25] health fail count=1
+[2026-02-20T19:09:28] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:09:28] [DRY-RUN] command: ollama ps
+[2026-02-20T19:09:28] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:09:28] health fail count=1
+[2026-02-20T19:09:30] memory usage=27.55%
+[2026-02-20T19:09:30] [DRY-RUN] command: ollama ps
+[2026-02-20T19:09:30] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:09:30] health fail count=2
+[2026-02-20T19:09:33] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:09:33] [DRY-RUN] command: ollama ps
+[2026-02-20T19:09:33] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:09:33] health fail count=2
+[2026-02-20T19:09:35] memory usage=27.34%
+[2026-02-20T19:09:35] [DRY-RUN] command: ollama ps
+[2026-02-20T19:09:35] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:09:35] health fail count=3
+[2026-02-20T19:09:35] recovery start: health_check_failed, model=llama3.1:8b
+[2026-02-20T19:09:35] [DRY-RUN] command: bash -lc 'opclaw model use qwen2.5:7b'
+[2026-02-20T19:09:35] switched model -> qwen2.5:7b
+[2026-02-20T19:09:35] [DRY-RUN] command: bash -lc 'pkill -f opclaw || true; sleep 1; opclaw serve >/tmp/opclaw.log 2>&1 &'
+[2026-02-20T19:09:35] service restart completed
+[2026-02-20T19:09:35] [DRY-RUN] webhook POST to https://example.com/your-webhook: [Watchdog] Recovery completed
+reason=health_check_failed; from=llama3.1:8b; to=qwen2.5:7b
+[2026-02-20T19:09:35] [DRY-RUN] command: bash -lc 'echo '"'"'[Watchdog] Recovery completed
+reason=health_check_failed; from=llama3.1:8b; to=qwen2.5:7b'"'"''
+[2026-02-20T19:09:38] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:09:38] [DRY-RUN] command: ollama ps
+[2026-02-20T19:09:38] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:09:38] health fail count=3
+[2026-02-20T19:09:38] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:09:40] memory usage=27.51%
+[2026-02-20T19:09:40] [DRY-RUN] command: ollama ps
+[2026-02-20T19:09:40] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:09:40] health fail count=1
+[2026-02-20T19:09:43] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:09:43] [DRY-RUN] command: ollama ps
+[2026-02-20T19:09:43] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:09:43] health fail count=1
+[2026-02-20T19:09:45] memory usage=27.36%
+[2026-02-20T19:09:45] [DRY-RUN] command: ollama ps
+[2026-02-20T19:09:45] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:09:45] health fail count=2
+[2026-02-20T19:09:48] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:09:48] [DRY-RUN] command: ollama ps
+[2026-02-20T19:09:48] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:09:48] health fail count=2
+[2026-02-20T19:09:50] memory usage=27.07%
+[2026-02-20T19:09:50] [DRY-RUN] command: ollama ps
+[2026-02-20T19:09:50] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:09:50] health fail count=3
+[2026-02-20T19:09:50] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:09:53] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:09:53] [DRY-RUN] command: ollama ps
+[2026-02-20T19:09:53] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:09:53] health fail count=3
+[2026-02-20T19:09:53] recovery start: health_check_failed, model=qwen2.5:7b
+[2026-02-20T19:09:53] [DRY-RUN] command: bash -lc 'opclaw model use llama3.1:8b'
+[2026-02-20T19:09:53] switched model -> llama3.1:8b
+[2026-02-20T19:09:53] [DRY-RUN] command: bash -lc 'pkill -f opclaw || true; sleep 1; opclaw serve >/tmp/opclaw.log 2>&1 &'
+[2026-02-20T19:09:53] service restart completed
+[2026-02-20T19:09:53] [DRY-RUN] webhook POST to https://example.com/your-webhook: [Watchdog] Recovery completed
+reason=health_check_failed; from=qwen2.5:7b; to=llama3.1:8b
+[2026-02-20T19:09:53] [DRY-RUN] command: bash -lc 'echo '"'"'[Watchdog] Recovery completed
+reason=health_check_failed; from=qwen2.5:7b; to=llama3.1:8b'"'"''
+[2026-02-20T19:09:55] memory usage=27.54%
+[2026-02-20T19:09:55] [DRY-RUN] command: ollama ps
+[2026-02-20T19:09:55] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:09:55] health fail count=1
+[2026-02-20T19:09:58] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:09:58] [DRY-RUN] command: ollama ps
+[2026-02-20T19:09:58] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:09:58] health fail count=1
+[2026-02-20T19:10:00] memory usage=27.49%
+[2026-02-20T19:10:00] [DRY-RUN] command: ollama ps
+[2026-02-20T19:10:00] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:10:00] health fail count=2
+[2026-02-20T19:10:03] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:10:03] [DRY-RUN] command: ollama ps
+[2026-02-20T19:10:03] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:10:03] health fail count=2
+[2026-02-20T19:10:05] memory usage=27.18%
+[2026-02-20T19:10:05] [DRY-RUN] command: ollama ps
+[2026-02-20T19:10:05] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:10:05] health fail count=3
+[2026-02-20T19:10:05] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:10:08] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:10:08] [DRY-RUN] command: ollama ps
+[2026-02-20T19:10:08] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:10:08] health fail count=3
+[2026-02-20T19:10:08] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:10:10] memory usage=26.97%
+[2026-02-20T19:10:10] [DRY-RUN] command: ollama ps
+[2026-02-20T19:10:10] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:10:10] health fail count=1
+[2026-02-20T19:10:13] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:10:13] [DRY-RUN] command: ollama ps
+[2026-02-20T19:10:13] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:10:13] health fail count=1
+[2026-02-20T19:10:15] memory usage=26.72%
+[2026-02-20T19:10:15] [DRY-RUN] command: ollama ps
+[2026-02-20T19:10:15] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:10:15] health fail count=2
+[2026-02-20T19:10:18] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:10:18] [DRY-RUN] command: ollama ps
+[2026-02-20T19:10:18] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:10:18] health fail count=2
+[2026-02-20T19:10:20] memory usage=26.71%
+[2026-02-20T19:10:20] [DRY-RUN] command: ollama ps
+[2026-02-20T19:10:20] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:10:20] health fail count=3
+[2026-02-20T19:10:20] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:10:23] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:10:23] [DRY-RUN] command: ollama ps
+[2026-02-20T19:10:23] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:10:23] health fail count=3
+[2026-02-20T19:10:23] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:10:25] memory usage=27.00%
+[2026-02-20T19:10:25] [DRY-RUN] command: ollama ps
+[2026-02-20T19:10:25] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:10:25] health fail count=1
+[2026-02-20T19:10:28] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:10:28] [DRY-RUN] command: ollama ps
+[2026-02-20T19:10:28] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:10:28] health fail count=1
+[2026-02-20T19:10:30] memory usage=27.35%
+[2026-02-20T19:10:30] [DRY-RUN] command: ollama ps
+[2026-02-20T19:10:30] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:10:30] health fail count=2
+[2026-02-20T19:10:33] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:10:33] [DRY-RUN] command: ollama ps
+[2026-02-20T19:10:33] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:10:33] health fail count=2
+[2026-02-20T19:10:35] memory usage=27.28%
+[2026-02-20T19:10:35] [DRY-RUN] command: ollama ps
+[2026-02-20T19:10:35] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:10:35] health fail count=3
+[2026-02-20T19:10:35] recovery start: health_check_failed, model=qwen2.5:7b
+[2026-02-20T19:10:35] [DRY-RUN] command: bash -lc 'opclaw model use llama3.1:8b'
+[2026-02-20T19:10:35] switched model -> llama3.1:8b
+[2026-02-20T19:10:35] [DRY-RUN] command: bash -lc 'pkill -f opclaw || true; sleep 1; opclaw serve >/tmp/opclaw.log 2>&1 &'
+[2026-02-20T19:10:35] service restart completed
+[2026-02-20T19:10:35] [DRY-RUN] webhook POST to https://example.com/your-webhook: [Watchdog] Recovery completed
+reason=health_check_failed; from=qwen2.5:7b; to=llama3.1:8b
+[2026-02-20T19:10:35] [DRY-RUN] command: bash -lc 'echo '"'"'[Watchdog] Recovery completed
+reason=health_check_failed; from=qwen2.5:7b; to=llama3.1:8b'"'"''
+[2026-02-20T19:10:38] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:10:38] [DRY-RUN] command: ollama ps
+[2026-02-20T19:10:38] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:10:38] health fail count=3
+[2026-02-20T19:10:38] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:10:40] memory usage=27.29%
+[2026-02-20T19:10:40] [DRY-RUN] command: ollama ps
+[2026-02-20T19:10:40] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:10:40] health fail count=1
+[2026-02-20T19:10:43] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:10:43] [DRY-RUN] command: ollama ps
+[2026-02-20T19:10:43] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:10:43] health fail count=1
+[2026-02-20T19:10:45] memory usage=27.26%
+[2026-02-20T19:10:45] [DRY-RUN] command: ollama ps
+[2026-02-20T19:10:45] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:10:45] health fail count=2
+[2026-02-20T19:10:48] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:10:48] [DRY-RUN] command: ollama ps
+[2026-02-20T19:10:48] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:10:48] health fail count=2
+[2026-02-20T19:10:50] memory usage=27.39%
+[2026-02-20T19:10:50] [DRY-RUN] command: ollama ps
+[2026-02-20T19:10:50] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:10:50] health fail count=3
+[2026-02-20T19:10:50] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:10:53] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:10:53] [DRY-RUN] command: ollama ps
+[2026-02-20T19:10:53] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:10:53] health fail count=3
+[2026-02-20T19:10:53] recovery start: health_check_failed, model=llama3.1:8b
+[2026-02-20T19:10:53] [DRY-RUN] command: bash -lc 'opclaw model use qwen2.5:7b'
+[2026-02-20T19:10:53] switched model -> qwen2.5:7b
+[2026-02-20T19:10:53] [DRY-RUN] command: bash -lc 'pkill -f opclaw || true; sleep 1; opclaw serve >/tmp/opclaw.log 2>&1 &'
+[2026-02-20T19:10:53] service restart completed
+[2026-02-20T19:10:53] [DRY-RUN] webhook POST to https://example.com/your-webhook: [Watchdog] Recovery completed
+reason=health_check_failed; from=llama3.1:8b; to=qwen2.5:7b
+[2026-02-20T19:10:53] [DRY-RUN] command: bash -lc 'echo '"'"'[Watchdog] Recovery completed
+reason=health_check_failed; from=llama3.1:8b; to=qwen2.5:7b'"'"''
+[2026-02-20T19:10:55] memory usage=27.20%
+[2026-02-20T19:10:55] [DRY-RUN] command: ollama ps
+[2026-02-20T19:10:55] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:10:55] health fail count=1
+[2026-02-20T19:10:58] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:10:58] [DRY-RUN] command: ollama ps
+[2026-02-20T19:10:58] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:10:58] health fail count=1
+[2026-02-20T19:11:00] memory usage=27.38%
+[2026-02-20T19:11:00] [DRY-RUN] command: ollama ps
+[2026-02-20T19:11:00] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:11:00] health fail count=2
+[2026-02-20T19:11:03] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:11:03] [DRY-RUN] command: ollama ps
+[2026-02-20T19:11:03] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:11:03] health fail count=2
+[2026-02-20T19:11:05] memory usage=27.10%
+[2026-02-20T19:11:05] [DRY-RUN] command: ollama ps
+[2026-02-20T19:11:05] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:11:05] health fail count=3
+[2026-02-20T19:11:05] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:11:08] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:11:08] [DRY-RUN] command: ollama ps
+[2026-02-20T19:11:08] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:11:08] health fail count=3
+[2026-02-20T19:11:08] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:11:10] memory usage=27.14%
+[2026-02-20T19:11:10] [DRY-RUN] command: ollama ps
+[2026-02-20T19:11:10] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:11:10] health fail count=1
+[2026-02-20T19:11:13] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:11:13] [DRY-RUN] command: ollama ps
+[2026-02-20T19:11:13] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:11:13] health fail count=1
+[2026-02-20T19:11:16] memory usage=26.88%
+[2026-02-20T19:11:16] [DRY-RUN] command: ollama ps
+[2026-02-20T19:11:16] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:11:16] health fail count=2
+[2026-02-20T19:11:18] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:11:18] [DRY-RUN] command: ollama ps
+[2026-02-20T19:11:18] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:11:18] health fail count=2
+[2026-02-20T19:11:21] memory usage=27.30%
+[2026-02-20T19:11:21] [DRY-RUN] command: ollama ps
+[2026-02-20T19:11:21] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:11:21] health fail count=3
+[2026-02-20T19:11:21] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:11:23] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:11:23] [DRY-RUN] command: ollama ps
+[2026-02-20T19:11:23] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:11:23] health fail count=3
+[2026-02-20T19:11:23] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:11:26] memory usage=27.22%
+[2026-02-20T19:11:26] [DRY-RUN] command: ollama ps
+[2026-02-20T19:11:26] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:11:26] health fail count=1
+[2026-02-20T19:11:28] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:11:28] [DRY-RUN] command: ollama ps
+[2026-02-20T19:11:28] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:11:28] health fail count=1
+[2026-02-20T19:11:31] memory usage=27.26%
+[2026-02-20T19:11:31] [DRY-RUN] command: ollama ps
+[2026-02-20T19:11:31] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:11:31] health fail count=2
+[2026-02-20T19:11:33] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:11:33] [DRY-RUN] command: ollama ps
+[2026-02-20T19:11:33] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:11:33] health fail count=2
+[2026-02-20T19:11:36] memory usage=27.24%
+[2026-02-20T19:11:36] [DRY-RUN] command: ollama ps
+[2026-02-20T19:11:36] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:11:36] health fail count=3
+[2026-02-20T19:11:36] recovery start: health_check_failed, model=llama3.1:8b
+[2026-02-20T19:11:36] [DRY-RUN] command: bash -lc 'opclaw model use qwen2.5:7b'
+[2026-02-20T19:11:36] switched model -> qwen2.5:7b
+[2026-02-20T19:11:36] [DRY-RUN] command: bash -lc 'pkill -f opclaw || true; sleep 1; opclaw serve >/tmp/opclaw.log 2>&1 &'
+[2026-02-20T19:11:36] service restart completed
+[2026-02-20T19:11:36] [DRY-RUN] webhook POST to https://example.com/your-webhook: [Watchdog] Recovery completed
+reason=health_check_failed; from=llama3.1:8b; to=qwen2.5:7b
+[2026-02-20T19:11:36] [DRY-RUN] command: bash -lc 'echo '"'"'[Watchdog] Recovery completed
+reason=health_check_failed; from=llama3.1:8b; to=qwen2.5:7b'"'"''
+[2026-02-20T19:11:38] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:11:38] [DRY-RUN] command: ollama ps
+[2026-02-20T19:11:38] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:11:38] health fail count=3
+[2026-02-20T19:11:38] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:11:41] memory usage=27.37%
+[2026-02-20T19:11:41] [DRY-RUN] command: ollama ps
+[2026-02-20T19:11:41] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:11:41] health fail count=1
+[2026-02-20T19:11:43] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:11:43] [DRY-RUN] command: ollama ps
+[2026-02-20T19:11:43] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:11:43] health fail count=1
+[2026-02-20T19:11:46] memory usage=27.45%
+[2026-02-20T19:11:46] [DRY-RUN] command: ollama ps
+[2026-02-20T19:11:46] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:11:46] health fail count=2
+[2026-02-20T19:11:48] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:11:48] [DRY-RUN] command: ollama ps
+[2026-02-20T19:11:48] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:11:48] health fail count=2
+[2026-02-20T19:11:51] memory usage=27.29%
+[2026-02-20T19:11:51] [DRY-RUN] command: ollama ps
+[2026-02-20T19:11:51] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:11:51] health fail count=3
+[2026-02-20T19:11:51] in cooldown (60s), skip recovery. reason=health_check_failed
+[2026-02-20T19:11:54] memory monitor error: Cannot determine memory usage on this system
+[2026-02-20T19:11:54] [DRY-RUN] command: ollama ps
+[2026-02-20T19:11:54] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:11:54] health fail count=3
+[2026-02-20T19:11:54] recovery start: health_check_failed, model=qwen2.5:7b
+[2026-02-20T19:11:54] [DRY-RUN] command: bash -lc 'opclaw model use llama3.1:8b'
+[2026-02-20T19:11:54] switched model -> llama3.1:8b
+[2026-02-20T19:11:54] [DRY-RUN] command: bash -lc 'pkill -f opclaw || true; sleep 1; opclaw serve >/tmp/opclaw.log 2>&1 &'
+[2026-02-20T19:11:54] service restart completed
+[2026-02-20T19:11:54] [DRY-RUN] webhook POST to https://example.com/your-webhook: [Watchdog] Recovery completed
+reason=health_check_failed; from=qwen2.5:7b; to=llama3.1:8b
+[2026-02-20T19:11:54] [DRY-RUN] command: bash -lc 'echo '"'"'[Watchdog] Recovery completed
+reason=health_check_failed; from=qwen2.5:7b; to=llama3.1:8b'"'"''
+[2026-02-20T19:11:56] memory usage=27.18%
+[2026-02-20T19:11:56] [DRY-RUN] command: ollama ps
+[2026-02-20T19:11:56] health url exception: <urlopen error [Errno 1] Operation not permitted>
+[2026-02-20T19:11:56] health fail count=1

@@ -1,0 +1,30 @@
+{
+  "name": "line-notion-bot",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "test": "vitest run",
+    "test:gobooking": "vitest run tests/gobooking-runner.test.ts",
+    "gobooking:run": "tsx src/gobooking/cli.ts",
+    "gobooking:testscript": "bash scripts/test-gobooking.sh"
+  },
+  "dependencies": {
+    "@line/bot-sdk": "^9.6.0",
+    "@notionhq/client": "^2.2.15",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "node-cron": "^3.0.3"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.10.1",
+    "@types/node-cron": "^3.0.11",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.5"
+  }
+}

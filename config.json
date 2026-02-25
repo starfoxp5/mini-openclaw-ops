@@ -1,0 +1,95 @@
+{
+  "interval_sec": 5,
+  "memory_threshold_percent": 84,
+  "consecutive_health_fail_limit": 3,
+  "cooldown_sec": 90,
+  "log_file": "./watchdog.log",
+  "prefer_lower_memory_on_overload": true,
+  "models": [
+    {
+      "name": "gpt-oss:20b",
+      "ram_gb": 13.0
+    },
+    {
+      "name": "deepseek-r1:8b",
+      "ram_gb": 5.2
+    },
+    {
+      "name": "qwen3-vl:4b",
+      "ram_gb": 3.3
+    }
+  ],
+  "profiles": [
+    {
+      "name": "full",
+      "models": [
+        "gpt-oss:20b",
+        "deepseek-r1:8b",
+        "qwen3-vl:4b"
+      ],
+      "ram_gb": 21.5
+    },
+    {
+      "name": "balanced",
+      "models": [
+        "deepseek-r1:8b",
+        "qwen3-vl:4b"
+      ],
+      "ram_gb": 8.5
+    },
+    {
+      "name": "safe",
+      "models": [
+        "qwen3-vl:4b"
+      ],
+      "ram_gb": 3.3
+    }
+  ],
+  "initial_profile": "full",
+  "health_check": {
+    "timeout_sec": 8,
+    "command": [
+      "/usr/local/bin/ollama",
+      "ps"
+    ]
+  },
+  "switch": {
+    "command": [
+      "bash",
+      "-lc",
+      "openclaw profile apply {profile} --models {models_spaced}"
+    ],
+    "timeout_sec": 20
+  },
+  "restart": {
+    "command": [
+      "bash",
+      "-lc",
+      "pkill -f openclaw || true; sleep 1; openclaw serve >/tmp/openclaw.log 2>&1 &"
+    ],
+    "timeout_sec": 25
+  },
+  "notification": {
+    "command": [
+      "bash",
+      "-lc",
+      "osascript -e 'display notification \"{message}\" with title \"OpenClaw Watchdog\"'"
+    ]
+  },
+  "emergency_fallback": {
+    "enabled": true,
+    "name": "gemini",
+    "command": [
+      "bash",
+      "-lc",
+      "openclaw provider use gemini && openclaw model use gemini-2.0-flash"
+    ],
+    "timeout_sec": 25,
+    "restart_command": [
+      "bash",
+      "-lc",
+      "pkill -f openclaw || true; sleep 1; openclaw serve >/tmp/openclaw.log 2>&1 &"
+    ],
+    "restart_timeout_sec": 25
+  }
+}

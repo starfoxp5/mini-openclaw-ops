@@ -1,0 +1,4 @@
+interface:
+  display_name: "GoBooking 預約（整合版）"
+  short_description: "整合既有 SOP 與新版 0 元優惠碼自動下單規則"
+  default_prompt: "先依 Fiona SOP 收集與確認，再執行 gobooking.tw 預約，優惠碼 Search->Apply 且 0 元可自動下單。"

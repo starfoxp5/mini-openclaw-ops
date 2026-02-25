@@ -1,0 +1,22 @@
+[
+  { "text": "收到訂單 王先生 E3MH x2 金額120000", "expectType": "RECEIVED" },
+  { "text": "收到訂單 豪泰企業 F572 x1 金額68000", "expectType": "RECEIVED" },
+  { "text": "收到訂單 林小姐 RAY300 x3 金額94500", "expectType": "RECEIVED" },
+  { "text": "向原廠下單 原廠單號33038172 型號E3MH x2", "expectType": "FACTORY_ORDERED" },
+  { "text": "向原廠下單 原廠單號33038199 型號F572 x1", "expectType": "FACTORY_ORDERED" },
+  { "text": "向原廠下單 客戶PO4705937 型號RAY300 x3", "expectType": "FACTORY_ORDERED" },
+  { "text": "交期通知 原廠單號33038172 ETA 2026/03/15", "expectType": "ETA_CONFIRMED" },
+  { "text": "交期通知 原廠單號33038199 ETA 2026/03/22", "expectType": "ETA_CONFIRMED" },
+  { "text": "改期 原廠單號33038172 2026/03/15->2026/04/10", "expectType": "ETA_CHANGED" },
+  { "text": "改期 原廠單號33038199 2026/03/22->2026/03/29", "expectType": "ETA_CHANGED" },
+  { "text": "預計出貨 客戶王先生 日期2026/04/12", "expectType": "PLANNED_SHIP" },
+  { "text": "預計出貨 客戶林小姐 日期2026/03/30", "expectType": "PLANNED_SHIP" },
+  { "text": "出貨 客戶王先生 金額120000 物流黑貓 單號123456789", "expectType": "SHIPPED" },
+  { "text": "出貨 客戶豪泰企業 金額68000 物流新竹 單號88776655", "expectType": "SHIPPED" },
+  { "text": "出貨 客戶林小姐 金額94500 物流順豐 單號SF9988123", "expectType": "SHIPPED" },
+  { "text": "王先生 E3MH 120000", "expectType": "UNKNOWN" },
+  { "text": "33038172 2026/04/10", "expectType": "UNKNOWN" },
+  { "text": "王先生 120000 123456789", "expectType": "UNKNOWN" },
+  { "text": "紅點 王小姐 OPX-10 x1 金額45000", "expectType": "UNKNOWN" },
+  { "text": "洋泰 陳先生 F150 x2 金額76000", "expectType": "UNKNOWN" }
+]

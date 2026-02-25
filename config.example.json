@@ -1,0 +1,67 @@
+{
+  "interval_sec": 5,
+  "memory_threshold_percent": 90,
+  "consecutive_health_fail_limit": 3,
+  "cooldown_sec": 60,
+  "log_file": "./watchdog.log",
+  "prefer_lower_memory_on_overload": true,
+  "models": [
+    {
+      "name": "primary-model",
+      "ram_gb": 8.0
+    },
+    {
+      "name": "backup-model",
+      "ram_gb": 4.0
+    }
+  ],
+  "health_check": {
+    "url": "http://127.0.0.1:11434/api/tags",
+    "method": "GET",
+    "timeout_sec": 10,
+    "command": [
+      "ollama",
+      "ps"
+    ]
+  },
+  "switch": {
+    "command": [
+      "bash",
+      "-lc",
+      "openclaw model use {model}"
+    ],
+    "timeout_sec": 20
+  },
+  "restart": {
+    "command": [
+      "bash",
+      "-lc",
+      "pkill -f openclaw || true; sleep 1; openclaw serve >/tmp/openclaw.log 2>&1 &"
+    ],
+    "timeout_sec": 20
+  },
+  "notification": {
+    "webhook_url": "https://example.com/your-webhook",
+    "command": [
+      "bash",
+      "-lc",
+      "echo '{message}'"
+    ]
+  },
+  "emergency_fallback": {
+    "enabled": true,
+    "name": "gemini",
+    "command": [
+      "bash",
+      "-lc",
+      "openclaw provider use gemini && openclaw model use gemini-2.0-flash"
+    ],
+    "timeout_sec": 25,
+    "restart_command": [
+      "bash",
+      "-lc",
+      "pkill -f openclaw || true; sleep 1; openclaw serve >/tmp/openclaw.log 2>&1 &"
+    ],
+    "restart_timeout_sec": 25
+  }
+}

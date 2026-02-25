@@ -1,0 +1,4 @@
+interface:
+  display_name: "GoBooking 預約（原版）"
+  short_description: "保留 Fiona SOP 與既有草稿預約流程"
+  default_prompt: "依 Fiona 既有 SOP 與原始草稿執行 gobooking.tw 預約，先送出前確認再執行。"

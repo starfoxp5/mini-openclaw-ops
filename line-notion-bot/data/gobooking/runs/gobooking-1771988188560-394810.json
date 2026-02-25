@@ -1,0 +1,55 @@
+{
+  "run_id": "gobooking-1771988188560-394810",
+  "profile": "chrome",
+  "input": {
+    "customer_name": "邱志奇",
+    "phone": "0968092870",
+    "email": "as52024430@gmail.com",
+    "court": "A場",
+    "date": "2026-03-26",
+    "time_slot": "22:00-23:00",
+    "discount_code": "energy0258"
+  },
+  "output": {
+    "result": "failed",
+    "reason_type": "transport_failure",
+    "last_success_step": "parse",
+    "failed_step": "open_page",
+    "next_one_action": "請在目標分頁點 OpenClaw Browser Relay，確認徽章為 ON。"
+  },
+  "logs": [
+    {
+      "step": "parse",
+      "action": "validate_input_contract",
+      "result": "success",
+      "duration_ms": 0,
+      "started_at": "2026-02-25T02:56:28.560Z",
+      "ended_at": "2026-02-25T02:56:28.560Z",
+      "attempt": 1
+    },
+    {
+      "step": "open_page",
+      "action": "open_gobooking_page",
+      "result": "failed",
+      "duration_ms": 0,
+      "started_at": "2026-02-25T02:56:28.560Z",
+      "ended_at": "2026-02-25T02:56:28.560Z",
+      "attempt": 1,
+      "detail": "Relay is OFF"
+    },
+    {
+      "step": "open_page",
+      "action": "open_gobooking_page",
+      "result": "failed",
+      "duration_ms": 0,
+      "started_at": "2026-02-25T02:56:28.560Z",
+      "ended_at": "2026-02-25T02:56:28.560Z",
+      "attempt": 2,
+      "detail": "Relay is OFF"
+    }
+  ],
+  "started_at": "2026-02-25T02:56:28.560Z",
+  "ended_at": "2026-02-25T02:56:28.561Z",
+  "total_duration_ms": 1,
+  "last_failure_screenshot": "/Users/fionaaibot/Desktop/mini 監控系統資源/line-notion-bot/data/gobooking/screenshots/gobooking-1771988188560-394810.txt"
+}

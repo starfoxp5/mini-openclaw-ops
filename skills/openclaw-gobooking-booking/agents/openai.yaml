@@ -1,0 +1,4 @@
+interface:
+  display_name: "OpenClaw GoBooking 預約"
+  short_description: "依 gobooking.tw 羽球場流程完成線上預約與付款前確認"
+  default_prompt: "依照場館頁面與時間軸，自動完成選場、填單、折扣碼、付款前確認，不自動最終送出。"
