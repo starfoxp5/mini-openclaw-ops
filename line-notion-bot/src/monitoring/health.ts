@@ -10,11 +10,20 @@ export interface HealthSnapshot {
 }
 
 function keyStatus(value?: string) {
-  if (!value) return "missing";
-  if (value.startsWith("sk-") || value.startsWith("gsk_") || value.startsWith("claude-")) {
+  if (!value || !value.trim()) return "missing";
+  const v = value.trim();
+  if (v.includes("your_") || v.includes("example") || v.includes("replace_me")) {
+    return "invalid";
+  }
+  if (
+    v.startsWith("sk-") ||
+    v.startsWith("gsk_") ||
+    v.startsWith("AIza") ||
+    v.startsWith("claude-")
+  ) {
     return "set";
   }
-  return "set";
+  return "invalid";
 }
 
 async function notionCheck() {
@@ -38,10 +47,17 @@ function providerCheck() {
     `google=${keyStatus(cfg.googleKey)}`
   ].join(" ");
 
-  const missingAll = !cfg.openaiKey && !cfg.anthropicKey && !cfg.googleKey;
+  const statuses = [
+    keyStatus(cfg.openaiKey),
+    keyStatus(cfg.anthropicKey),
+    keyStatus(cfg.googleKey)
+  ];
+  const anyValid = statuses.some((s) => s === "set");
+  const anyInvalid = statuses.some((s) => s === "invalid");
+  const finalDetail = anyInvalid ? `${detail} (fix invalid keys)` : detail;
   return {
-    status: (missingAll ? "degraded" : "ok") as "ok" | "degraded",
-    detail
+    status: (anyValid && !anyInvalid ? "ok" : "degraded") as "ok" | "degraded",
+    detail: finalDetail
   };
 }
 
