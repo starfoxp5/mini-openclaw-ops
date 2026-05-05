@@ -2,12 +2,19 @@ import { getNotionClient } from "../notion/client.js";
 import { getMetrics } from "./metrics.js";
 import { notionEnabled, providerHealthConfig } from "../config/env.js";
 function keyStatus(value) {
-    if (!value)
+    if (!value || !value.trim())
         return "missing";
-    if (value.startsWith("sk-") || value.startsWith("gsk_") || value.startsWith("claude-")) {
+    const v = value.trim();
+    if (v.includes("your_") || v.includes("example") || v.includes("replace_me")) {
+        return "invalid";
+    }
+    if (v.startsWith("sk-") ||
+        v.startsWith("gsk_") ||
+        v.startsWith("AIza") ||
+        v.startsWith("claude-")) {
         return "set";
     }
-    return "set";
+    return "invalid";
 }
 async function notionCheck() {
     if (!notionEnabled()) {
@@ -29,10 +36,17 @@ function providerCheck() {
         `fallback=${cfg.fallback}:${keyStatus(cfg.anthropicKey)}`,
         `google=${keyStatus(cfg.googleKey)}`
     ].join(" ");
-    const missingAll = !cfg.openaiKey && !cfg.anthropicKey && !cfg.googleKey;
+    const statuses = [
+        keyStatus(cfg.openaiKey),
+        keyStatus(cfg.anthropicKey),
+        keyStatus(cfg.googleKey)
+    ];
+    const anyValid = statuses.some((s) => s === "set");
+    const anyInvalid = statuses.some((s) => s === "invalid");
+    const finalDetail = anyInvalid ? `${detail} (fix invalid keys)` : detail;
     return {
-        status: (missingAll ? "degraded" : "ok"),
-        detail
+        status: (anyValid && !anyInvalid ? "ok" : "degraded"),
+        detail: finalDetail
     };
 }
 export async function getHealthSnapshot() {
